@@ -1,2 +1,2 @@
-var year=new Date();
-document.getElementById(thisyear).toContext = new year.getFullYear(year);
+var yearnow = new Date();
+document.getElementById('thisyear').innerHTML = yearnow.getFullYear();

@@ -1,2 +1,2 @@
-const options = (weeday: 'long', day: 'numeric', month: 'long', year: 'numeric', hours: 'numeric', minutes: 'numeric', seconds: 'numeric');
-document.getElementById('updated').textContent = new Date(document.lastModified).toLocaleString('en-US', options);
+const options = {weeday: 'long', day: 'numeric', month: 'numeric', year: 'numeric', hours: 'numeric', minutes: 'numeric', seconds: 'numeric'};
+document.getElementById('updatednow').textContent = new Date(document.lastModified).toLocaleString(options);

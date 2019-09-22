@@ -1,0 +1,31 @@
+body {
+    background-color: #ffffff;
+    font-family: "Verdana", "Arial", sans-serif;
+    line-height: 1.5;
+}
+
+header,
+footer {
+    border: 2px solid #fffb00;
+    border-radius: 10px;
+    background-color: #aaeeff;
+    font-size: 22px;
+    color: #001d4a;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 0px;
+    text-align: center;
+}
+
+img {
+    border: 2px solid #001d4a;
+    width: 200px;
+    border-radius: 10px;
+    float: right;
+    margin-top: -100px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #505050;
+}

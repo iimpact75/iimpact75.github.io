@@ -11,6 +11,7 @@ footer {
     background-color: #aaeeff;
     font-family: 'Dancing Script', cursive;
     font-size: 22px;
+    text-shadow: 4px 4px 4px #aaa;
     color: #001d4a;
     max-width: 100%;
     justify-content: space-between;

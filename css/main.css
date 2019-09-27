@@ -1,4 +1,4 @@
-body {
+body, p {
     background-color: #ffffff;
     font-family: 'Cinzel', serif;
     line-height: 1.5;
@@ -9,15 +9,13 @@ footer {
     border: 2px solid #fffb00;
     border-radius: 10px;
     background-color: #aaeeff;
+    font-family: 'Dancing Script', cursive;
     font-size: 22px;
     color: #001d4a;
     max-width: 100%;
     justify-content: space-between;
     margin-top: 0px;
     text-align: center;
-}
-header h1{
-    font-family: 'Dancing Script', cursive;
 }
 img {
     border: 2px solid #001d4a;

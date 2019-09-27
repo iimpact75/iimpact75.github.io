@@ -1,0 +1,7 @@
+@media only screen and (min-width: 32.5em){
+    img {
+        border-radius: 10px;
+        float: right;
+        margin-top: -100px;
+    }
+}

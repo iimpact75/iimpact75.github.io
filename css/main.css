@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    font-family: "Verdana", "Arial", sans-serif;
+    font-family: 'Cinzel', serif;
     line-height: 1.5;
 }
 
@@ -16,7 +16,9 @@ footer {
     margin-top: 0px;
     text-align: center;
 }
-
+header h1{
+    font-family: 'Dancing Script', cursive;
+}
 img {
     border: 2px solid #001d4a;
     width: 200px;

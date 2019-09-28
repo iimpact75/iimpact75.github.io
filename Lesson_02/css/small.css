@@ -26,19 +26,17 @@ main {
 }
 
 img {
-    border: 2px solid #000000;
     border-radius: 5px;
     width: 100%;
-    height: auto;
+    align-self: center;
+    margin: 0px;
 }
 
 main section {
     margin: 0.5rem;
     border: 2px solid #001d4a;
     border-radius: 5px;
-    padding: 0 1rem;
     background-color: #aaeeff;
-
 }
 
 section p {
@@ -49,5 +47,10 @@ section h2 {
     background-color: #001d4a;
     color: #ffffff;
     width: auto;
-    text-align: center;
+    margin: 0;
+    padding: 0px 0px 0px 5px;
+}
+
+Section h3 {
+ padding: 0px 0px 0px 5px;
 }

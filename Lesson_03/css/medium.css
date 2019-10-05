@@ -5,7 +5,7 @@
 
     section img {
         max-width: none;
-        width: none;
+        width: auto;
     }
 
     img.icon {

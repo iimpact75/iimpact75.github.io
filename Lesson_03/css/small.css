@@ -1,0 +1,126 @@
+header h1,
+footer {
+    border: 2px solid #fffb00;
+    border-radius: 10px;
+    background-color: #aaeeff;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    color: #001d4a;
+    margin-top: 0px;
+    padding: 1em;
+    text-align: center;
+    margin-block-end: 0.07em;
+}
+
+nav {
+    border: 2px solid #fffb00;
+    background-color: #aaeeff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding: 2px 15px 2px 15px;
+}
+
+nav ul a {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section img {
+    border-radius: 5px;
+    width: 100%;
+    align-self: center;
+    margin: 0px;
+    max-width: 300px;
+}
+
+body,
+main,
+p {
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+    margin: auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+
+
+footer p {
+    font-size: 1em;
+    color: #505050;
+}
+
+table,
+th,
+td {
+    border: 1px solid #9b9b9b;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+
+td.row1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    color: #EDEA57;
+    background-color: #0A8754;
+    text-align: center;
+}
+
+td.row2 {
+    font-family: 'Acme', sans-serif;
+    font-size: 24px;
+    color: #004F2D;
+    background-color: #A9FFCB;
+
+    text-align: center;
+}
+
+td.row3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+    color: #A9FFCB;
+    background-color: #0A8754;
+    text-align: center;
+}
+
+td.row4 {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+td.row5 {
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+
+td.row6 {
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+td.row7 {
+    font-family: 'Gudea', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}

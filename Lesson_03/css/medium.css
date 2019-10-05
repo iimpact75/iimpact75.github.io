@@ -1,0 +1,14 @@
+@media only screen and (min-width: 22em) {
+    nav ul {
+        flex-flow: row wrap;
+    }
+
+    section img {
+        max-width: none;
+        width: none;
+    }
+
+    img.icon {
+        width: 300px;
+    }
+}

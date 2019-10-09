@@ -9,7 +9,7 @@ footer {
     margin-top: 0px;
     padding: 1em;
     text-align: center;
-}
+    }
 
 nav {
     border: 2px solid #fffb00;
@@ -23,6 +23,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    flex: 1 1 100%;
     flex-flow: column;
     justify-content: space-between;
     text-align: center;

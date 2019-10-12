@@ -1,0 +1,111 @@
+html {
+    font-family: 'Gudea', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Acme', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004f2d;
+    flex-flow: column;
+    color: #EDEA57;
+    width: 100%;
+}
+
+header section {
+    display: flex;
+    flex-flow: column;
+    margin: 1rem;
+
+}
+
+header img {
+    width: 100%;
+    max-width: 100px;
+}
+
+header section h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px #002503;
+}
+
+nav {
+    width: 100%;
+    background-color: #a9ffcb;
+
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin:0;
+}
+
+.navigation li {
+    display: none;
+    list-style: none;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    color: #004f2d;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #004f2d;
+    color: #a9ffcb;
+}
+
+main,
+footer {
+    max-width: 766px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+main h2 {
+
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+main section {
+    display: block;
+    border: 1px dashed #002503;
+    background-color: #e3e7d3;
+    margin: 10px;
+    padding: 10px;
+    align-content: flex-start;
+}
+
+footer {
+    background-color: #004f2d;
+    font-family: 'Gudea', sans-serif;
+    color: #a9ffcb;
+    text-align: center;
+    padding: 5px 2%;
+}

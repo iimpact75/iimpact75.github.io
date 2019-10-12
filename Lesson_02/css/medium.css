@@ -8,7 +8,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    main section div {
+        padding: 15px 15px 15px 15px;
+    }
     section:nth-child(3) {
         grid-column: span 2;
     }

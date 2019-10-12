@@ -37,6 +37,11 @@ main section {
     border: 2px solid #001d4a;
     border-radius: 5px;
     background-color: #aaeeff;
+
+}
+
+main section div {
+    padding: 5px 5px 5px 5px;
 }
 
 section p {
@@ -52,5 +57,5 @@ section h2 {
 }
 
 Section h3 {
- padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 5px;
 }

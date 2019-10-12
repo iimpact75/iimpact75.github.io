@@ -1,0 +1,36 @@
+@media only screen and (min-width: 22em) {
+    .navigation {
+        display: flex;
+        flex-flow: row;
+        flex: 1 1 100%;
+        margin: auto;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    header img {
+        max-width: 144px;
+        min-width: 100px;
+    }
+
+    header {
+        flex-flow: row;
+    }
+
+    main h2 {
+        font-size: 3em;
+    }
+    main section {
+    
+        border: 2px dotted #002503;
+        background-color: #ff9898;
+    }
+}

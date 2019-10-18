@@ -20,7 +20,12 @@ header {
     color: #EDEA57;
     width: 100%;
 }
+header span {
+    display:block;
+    width: 100%;
+    line-height: 2rem;
 
+}
 header section {
     display: flex;
     flex-flow: column;

@@ -1,0 +1,40 @@
+@media only screen and (min-width: 40em) {
+    header img {
+        width: 100%;
+    }
+
+    header section h1 {
+        font-size: 5rem;
+
+    }
+
+    main h2 {
+        font-size: 4em;
+    }
+
+    .forcast,
+    .forcastable {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    table {
+        table-layout: auto;
+        border-collapse: collapse;
+
+    }
+
+    th,
+    tr,
+    td {
+
+        border: 2px double red;
+        padding: .5em;
+        align-content: center;
+        text-align: center;
+
+    }
+}

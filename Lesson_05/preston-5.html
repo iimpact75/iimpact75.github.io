@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Steven Philips">
+    <meta name="creation date" content="2019-10-09">
+    <meta name="description" content="Steven Philips Week 4 More Here Copy to Next Week">
+    <title>Preston Weather Page - CIT 230 Fall 2019 Week 04 - Steven Philips</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme%7CGudea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon48x48.ico">
+</head>
+
+<body>
+    <div><span id='party'></span></div>
+    <header>
+        <picture>
+            <img src="images/iconfinder_applications-science_28735.png" alt="logo">
+        </picture>
+        <section>
+            <h1>6by9Weather</h1>
+            <div>Weather is the answer to life, the universe, and everything.</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class='hero'>
+            <picture>
+                <img src="images/orange_fall_river_750.jpg" alt="Orange fall trees with a river flowing through.">
+            </picture>
+            <div class='summary'>
+                <div class='sumhead'>
+                    <h3>Weather Summary</h3>
+                </div>
+                <div class='column1'>
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                </div>
+                <div class='column2'>
+                    <p>78 &#8457;</p>
+                    <p>81 &#8457;</p>
+                    <p>0 &#8457;</p>
+                    <p>42%</p>
+                    <p>4mph</p>
+                </div>
+            </div>
+        </div>
+        <div class='forcast'>
+            <div>
+                <h3>5 Day Forcast</h3>
+            </div>
+            <table class='forcastable'>
+                <tbody>
+                    <tr>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/partly_cloudy_100.png" alt="overcast">71&#8457;</td>
+                        <td><img src="images/partly_cloudy_100.png" alt="overcast">71&#8457;</td>
+                        <td><img src="images/partly_cloudy_100.png" alt="overcast">71&#8457;</td>
+                        <td><img src="images/partly_cloudy_100.png" alt="overcast">71&#8457;</td>
+                        <td><img src="images/partly_cloudy_100.png" alt="overcast">71&#8457;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class='info'>
+            <article>
+                <h2>Artile Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis neque
+                    doloribus voluptates facilis laboriosam accusantium excepturi! Error assumenda, dicta non excepturi
+                    dolorem iusto quos ipsam quae, commodi adipisci voluptatum repellat! </p>
+                <picture><img src="images/snowy_400.jpg" alt="A Snowy winter on its way"></picture>
+            </article>
+        </div>
+        <div class='contact'>
+            <picture>
+                <img src="images/map.jpg" alt="map of Preston, Fish Haven, and Soda Springs">
+            </picture>
+            <p>6by9Weather</p>
+            <p>address 1</p>
+            <p>address 2</p>
+            <br>
+            <p>telephone</p>
+            <p>email</p>
+        </div>
+    </main>
+    <footer>
+        <div>&copy; 2019 6by9Weather.com | CIT 230 | Steven Philips</div>
+        <span id='currentdate'></span>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/responsive_nav.js"></script>
+    <script src="js/party.js"></script>
+</body>
+
+</html>

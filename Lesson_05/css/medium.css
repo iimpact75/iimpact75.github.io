@@ -28,8 +28,12 @@
         font-size: 3em;
     }
 
-    .contact img {
+    .contact .map {
         display: flex;
+        float: left;
+        margin: 1rem;
+        width: 100%;
+        max-width: 300px;
     }
 
 }

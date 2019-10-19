@@ -28,7 +28,7 @@ div span {
     background-color: orange;
     text-align: center;
     margin: auto;
-    line-height: 2rem;
+    padding: 1em;
 }
 
 header section {
@@ -67,7 +67,6 @@ nav {
     display: none;
     list-style: none;
 }
-
 .navigation li:first-child {
     display: block;
 }
@@ -82,7 +81,7 @@ nav {
     text-decoration: none;
 }
 
-.navigation a:hover {
+.navigation a:hover , .navigation .urhere{
     background-color: #004f2d;
     color: #a9ffcb;
 }
@@ -122,6 +121,7 @@ footer {
 
 .hero picture img {
     width: 100%;
+    border-radius: 1rem;
 
 }
 
@@ -130,8 +130,9 @@ footer {
     grid-template-columns: auto auto;
     margin: 0;
     border: 0;
+    border-radius: 1rem;
     padding: 1em;
-    background-color: #e3e7d3;
+    background-color: #e3e7d3c7;
     position: absolute;
     top: 1rem;
     left: 1.5rem;
@@ -177,25 +178,45 @@ footer {
 }
 
 .info {
-    float: left;
+    display: block;
     background: #e3e7d3;
-    border: 2px solid #002503c7;
+    border: 2px solid #a7ad8e;
+    margin: 1rem;
+    padding: 1rem;
 }
 
-.info picture img {
-    box-shadow: 1rem 1rem .5rem #002503, 1rem 1rem .5rem #002503;
+.info img {
+    box-shadow: 1rem 1rem .5rem #002503;
     border-radius: .5rem;
     float: right;
     width: 100%;
-    margin: auto;
+    max-width: 300px;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+
 
 }
 
 .contact {
-    float: left;
+    display: block;
     background: #a9ffcb;
 }
 
-.contact img {
+.contact .map {
     display: none;
+}
+
+.contact p img {
+    width: 2rem;
+}
+
+.socially {
+    display: flex;
+    flex-flow: row;
+}
+
+.socially img {
+    min-width: 20px;
+    max-width: 128px;
+    width: 100%
 }

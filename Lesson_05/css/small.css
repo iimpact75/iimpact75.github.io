@@ -28,7 +28,7 @@ div span {
     background-color: orange;
     text-align: center;
     margin: auto;
-    padding: 1em;
+    line-height: 1.75rem;
 }
 
 header section {

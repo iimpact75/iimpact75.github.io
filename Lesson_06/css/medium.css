@@ -1,0 +1,39 @@
+@media only screen and (min-width: 22em) {
+    .navigation {
+        display: flex;
+        flex-flow: row;
+        margin: auto;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    header img {
+        max-width: 144px;
+        min-width: 100px;
+    }
+
+    header {
+        flex-flow: row;
+    }
+
+    main h2 {
+        font-size: 3em;
+    }
+
+    .contact .map {
+        display: flex;
+        float: left;
+        margin: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+}

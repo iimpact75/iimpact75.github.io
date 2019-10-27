@@ -1,1 +1,5 @@
-WebFont.load({google: {families: ['Gudea','Acme']}});
+WebFont.load({
+    google: {
+        families: ['Gudea', 'Acme']
+    }
+});

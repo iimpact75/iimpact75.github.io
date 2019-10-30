@@ -1,20 +1,8 @@
 @media only screen and (min-width: 22em){
-    .navigation {
-        display: flex;
-        flex-flow: row;
-        margin: auto;
+    .navigation a {
+        border-top-left-radius: 10% 20%;
+        border-top-right-radius: 10% 20%;
     }
-
-    .navigation li:first-child {
-        display: none;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-        justify-content: center;
-    }
-
     header img {
         max-width: 144px;
         min-width: 100px;

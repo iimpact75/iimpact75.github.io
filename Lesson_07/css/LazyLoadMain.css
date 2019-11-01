@@ -1,0 +1,22 @@
+html {
+    font-family: 'Gudea', sans-serif;
+    max-width: 800px;
+    
+}
+
+h1, footer {
+    font-family: 'Acme', serif;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+body {
+    display: block;
+}
+
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 400px;
+}

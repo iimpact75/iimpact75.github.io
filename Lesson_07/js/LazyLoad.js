@@ -20,7 +20,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             return;
         } else {
             preloadImage(entry.target);
-            imageObserver.unobserve(entry.target);
+            imgObserver.unobserve(entry.target);
         }
     })
 }, imgOptions);

@@ -1,0 +1,22 @@
+@media only screen and (min-width: 580px) {
+    .navigation {
+        display: flex;
+        flex-flow: row;
+        margin: auto;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .navigation a {
+        border-bottom-left-radius: 10% 20%;
+        border-bottom-right-radius: 10% 20%;
+    }
+}

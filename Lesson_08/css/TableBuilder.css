@@ -2,7 +2,8 @@ html {
     font-family: 'Ubuntu', sans-serif;
 
 }
-div{
+
+div {
     display: block;
     justify-content: center;
     align-content: center;
@@ -18,7 +19,9 @@ div{
     margin: auto;
 }
 
-.simpleTable, .simpleTable th, .simpleTable td{
+.simpleTable,
+.simpleTable th,
+.simpleTable td {
     border: 1px solid #b3b3b3;
 }
 
@@ -27,6 +30,7 @@ div{
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
 .simpleTable .tSubTitle {
     background-color: #628ca6;
     font-weight: bold;
@@ -53,10 +57,11 @@ div{
     background-color: #e7f0ed;
 }
 
-.simpleTable .tFooter {
+.simpleTable tfoot {
     background-color: #7fb9c2;
     font-size: .75em;
 }
-#blackFriday{
+
+#blackFriday {
     font-style: italic;
 }

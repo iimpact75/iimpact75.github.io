@@ -22,10 +22,9 @@ table {
 th,
 td {
     border: 1px solid darkgray;
-    
 }
 
-table thead tr{
+table thead tr {
     background-color: #7fb9c2;
     font-size: 1.5em;
     line-height: 1.5em;

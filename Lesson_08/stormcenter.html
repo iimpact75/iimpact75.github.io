@@ -46,7 +46,7 @@
                 <fieldset>
                     <legend>Storm Chaser Identification</legend>
                     <label class="top" for="name">Full Name*<input type="text" id="name" name="name" minlength="5"
-                            required></label>
+                            pattern="[^0-9]+[a-zA-Z\s]{4,}" required></label>
                     <label class="top" for="email">Email Address*<input type="email" id="email" name="email"
                             minlength="12" placeholder="sender@mail.com" required></label>
                     <label class="top" for="phone">Phone Number*<input type="tel" id="phone" name="phone" minlength="5"
@@ -70,7 +70,7 @@
                     </div>
                     <div class="formdiv">
                         <label class="slider" for="sslider"> Storm Severity: <em>(slide to severity level)</em>
-                            &nbsp;&nbsp;&nbsp;<input type="range" id="sslider" value="5" min="1" max="10" step="1"
+                            &nbsp;&nbsp;&nbsp;<input type="range" id="sslider" name="slideRange" value="5" min="1" max="10" step="1"
                                 list="tickmarks" oninput="adjustSlider(this.value)" onchange="adjustSlider(this.value)">
                             <span id="slidervalue">5</span>
                             <datalist id="tickmarks">
@@ -86,8 +86,8 @@
                                 <option value="10">10</option>
                             </datalist></label>
                         <label class="top" for="region">Storm Region
-                            <select id="region">
-                                <option value="">Select Option:&#9662;</option>
+                            <select id="region" name="regionSelect">
+                                <option value="">&#9662;Select Option:&#9662;   </option>
                                 <option value="0">Preston</option>
                                 <option value="1">Soda Springs</option>
                                 <option value="2">Fish Haven</option>
@@ -100,10 +100,11 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <label class="top">Additional Information and Comments:<input type="text" name="notes"></label>
+                    <legend>Vital Information and Opinions</legend>
+                    <label class="top" for="tArea"><textarea id="tArea" name="comments" cols="60" rows="5" placeholder="Additional Information, Comments, or Concerns ... Enter here."></textarea></label>
                 </fieldset>
 
-                <input type="submit" value="Send Report" class="sbmit">
+                <input type="submit" value="Send Report" class="sbmit" name="submitButton">
             </form>
         </div>
     </main>

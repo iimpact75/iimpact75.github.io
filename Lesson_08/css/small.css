@@ -97,6 +97,10 @@ em {
     font-size: smaller;
 }
 
+div.gratitude {
+    padding: 1rem;
+}
+
 main,
 footer {
     max-width: 766px;
@@ -141,7 +145,8 @@ form label.top {
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+form label.top textarea {
     -webkit-appearance: none;
     display: block;
     color: #000000;
@@ -181,8 +186,14 @@ form label.slider span {
 
 form label.sbs {
     display: block;
-    padding: .75 rem;
+    margin: .25rem;
     color: #000000;
+
+}
+
+form label.sbs input {
+    margin: .25rem .75rem 0 0;
+
 }
 
 form div.formdiv {

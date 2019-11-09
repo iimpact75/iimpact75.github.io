@@ -83,7 +83,7 @@ nav {
     text-decoration: none;
     background-color: #a9ffcb;
     border: 1px solid #004f2d;
-    
+
 }
 
 .navigation a:hover,
@@ -95,6 +95,10 @@ nav {
 
 em {
     font-size: smaller;
+}
+
+div.gratitude {
+    padding: 1rem;
 }
 
 main,
@@ -136,16 +140,17 @@ form label.top {
     display: block;
     padding: 0.5rem;
     color: #555555;
-    width: 100%;
+    width: 96%;
     max-width: 20rem;
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+form label.top textarea {
     -webkit-appearance: none;
     display: block;
     color: #000000;
-    width: 100%;
+    width: 96%;
     max-width: 20rem;
     border: 1px solid #555555;
     border-top-left-radius: 20% 10%;
@@ -171,18 +176,24 @@ form label.slider {
 form label.slider input {
     display: block;
     max-width: 20rem;
-    width: 100%;
+    width: 96%;
 }
 
 form label.slider span {
     max-width: 20rem;
-    width: 100%;
+    width: 96%;
 }
 
 form label.sbs {
     display: block;
-    padding: .75 rem;
+    margin: .25rem;
     color: #000000;
+
+}
+
+form label.sbs input {
+    margin: .25rem .75rem 0 0;
+
 }
 
 form div.formdiv {

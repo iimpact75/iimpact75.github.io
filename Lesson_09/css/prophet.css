@@ -20,6 +20,7 @@ img {
     object-position: 0px 0px;
     border-radius: .5em;
     box-shadow: 5px 5px 40px 5px var(--scolor);
+    margin: .5rem 0 0 0;
 }
 
 h1 {
@@ -35,6 +36,7 @@ h4,
 h5 {
     font-family: var(--font2);
     color: var(--scolor);
+    margin: 0;
 }
 
 .cards {
@@ -61,9 +63,8 @@ section {
     border-radius: .75rem;
 }
 
-section.p {
-    margin: 0em;
-    padding: 0em;
+section p {
+    margin: 0;
 }
 
 footer {

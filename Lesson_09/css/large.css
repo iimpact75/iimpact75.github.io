@@ -44,14 +44,17 @@
     .divgallery {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .maingallery {
         max-width: 1300px;
     }
+
     figcaption {
         display: block;
         text-align: center;
     }
-    .gallery img:hover{
+
+    .gallery img:hover {
         box-shadow: 0em 0em 2em #000000;
     }
 
@@ -61,5 +64,9 @@
         margin: 1rem;
         width: 100%;
         max-width: 300px;
+    }
+
+    .cityintro img {
+        max-width: 500px;
     }
 }

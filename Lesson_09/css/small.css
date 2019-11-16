@@ -1,5 +1,16 @@
+:root {
+    --color1: #004f2d;
+    --color2: #edea57;
+    --color3: #002503;
+    --color4: #ffa500;
+    --color5: #a9ffcb;
+    --font1: 'Acme', sans-serif;
+    --font2: 'Gudea', sans-serif;
+}
+
 html {
-    font-family: 'Gudea', sans-serif;
+    font-family: var(--font2);
+
 }
 
 h1,
@@ -8,24 +19,35 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Acme', sans-serif;
+    font-family: var(--font1);
+    margin: 1rem;
+    text-align: center;
+    color: var(--color3);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #004f2d;
+    background-color: var(--color1);
     flex-flow: column;
-    color: #EDEA57;
+    color: var(--color2);
     width: 100%;
+}
+
+p {
+    margin: 1rem;
+}
+
+img {
+    border-radius: 1rem;
 }
 
 #party {
 
     display: flex;
     justify-content: center;
-    background-color: orange;
+    background-color: var(--color4);
     text-align: center;
     margin: auto;
     line-height: 1.75rem;
@@ -47,7 +69,8 @@ header img {
 header div h1 {
     font-size: 3rem;
     margin: 0;
-    text-shadow: 2px 2px 6px #002503;
+    text-shadow: 2px 2px 6px var(--color3);
+    color: var(--color2);
 }
 
 nav {
@@ -79,18 +102,18 @@ nav {
 
 .navigation a {
     display: block;
-    color: #004f2d;
+    color: var(--color1);
     text-decoration: none;
-    background-color: #a9ffcb;
-    border: 1px solid #004f2d;
+    background-color: var(--color5);
+    border: 1px solid var(--color1);
 
 }
 
 .navigation a:hover,
 .navigation .urhere {
-    background-color: #004f2d;
-    border: 1px solid #a9ffcb;
-    color: #a9ffcb;
+    background-color: var(--color1);
+    border: 1px solid var(--color5);
+    color: var(--color5);
 }
 
 em {
@@ -120,7 +143,7 @@ main h2 {
 }
 
 form fieldset {
-    border: 1px solid #004f2d;
+    border: 1px solid var(--color1);
     border-top-left-radius: 20% 10%;
     border-top-right-radius: 20% 10%;
     border-bottom-right-radius: 20% 10%;
@@ -133,7 +156,7 @@ form legend {
     font-size: larger;
     margin: 0 1rem;
     padding: 0 .5rem;
-    color: #002503;
+    color: var(--color3);
 }
 
 form label.top {
@@ -203,9 +226,9 @@ form div.formdiv {
 input.sbmit {
     max-width: 20rem;
     margin: 0 0 2rem 2%;
-    color: #004f2d;
-    background-color: #a9ffcb;
-    border: 1px solid #004f2d;
+    color: var(--color1);
+    background-color: var(--color5);
+    border: 1px solid var(--color1);
     border-top-left-radius: 20% 10%;
     border-top-right-radius: 20% 10%;
     border-bottom-right-radius: 20% 10%;
@@ -214,9 +237,9 @@ input.sbmit {
 }
 
 footer {
-    background-color: #004f2d;
+    background-color: var(--color1);
     font-family: 'Gudea', sans-serif;
-    color: #a9ffcb;
+    color: var(--color5);
     text-align: center;
     padding: 5px 2%;
 }
@@ -317,7 +340,7 @@ footer {
 
 .contact {
     display: block;
-    background: #a9ffcb;
+    background: var(--color5);
 }
 
 .contact .map {
@@ -360,4 +383,43 @@ footer {
 figcaption {
     display: none;
     margin: 0;
+}
+
+div.cityinfo {
+    display: flexbox;
+}
+
+div.cityinfo section {
+    flex-flow: column;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 2rem .125rem var(--color5);
+
+}
+
+.cityinfo section h2,
+.cityinfo section h3 {
+    display: block;
+    text-align: center;
+    margin: 0;
+
+}
+
+.cityintro {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.cityintro img {
+    margin: .25rem;
+    width: 96%;
+    max-width: 300px;
+    border-radius: .75rem;
+}
+
+.cityintro p {
+    margin: 0;
+    padding: .25rem;
 }

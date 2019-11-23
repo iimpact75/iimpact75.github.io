@@ -1,4 +1,4 @@
-const ForeCastWeatherURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
+const ForeCastWeatherURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
 
 fetch(ForeCastWeatherURL)
     .then(response => response.json())
@@ -18,7 +18,7 @@ fetch(ForeCastWeatherURL)
                 let fdate = new Date(jsObject.list[j].dt_txt);
                 let wday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-                images.setAttribute('src', "http://openweathermap.org/img/w/" + jsObject.list[j].weather[0].icon + ".png");
+                images.setAttribute('src', "https://openweathermap.org/img/w/" + jsObject.list[j].weather[0].icon + ".png");
                 images.setAttribute('alt', 'jsObject.list[j].weather[0].description');
                 thcell.textContent = wday[fdate.getDay()];
 

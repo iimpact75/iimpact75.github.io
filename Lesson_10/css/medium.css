@@ -1,15 +1,27 @@
-@media only screen and (min-width: 22em) {
-    header img {
-        max-width: 144px;
-        min-width: 100px;
-    }
-
-    header {
+@media only screen and (min-width: 36rem) {
+    .navigation {
+        display: flex;
         flex-flow: row;
+        margin: auto;
     }
 
-    main h2 {
-        font-size: 3em;
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .navigation a {
+        border-bottom-left-radius: 10% 20%;
+        border-bottom-right-radius: 10% 20%;
+    }
+
+    .divgallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact .map {
@@ -20,11 +32,12 @@
         max-width: 300px;
     }
 
-    .maingallery {
-        max-width: 800px;
+    .cityintro {
+        display: flex;
+        flex-direction: row;
     }
 
-    .contact .map {
-        display: none;
+    .cityinfo section:nth-child(even)>.cityintro {
+        flex-direction: row-reverse;
     }
 }

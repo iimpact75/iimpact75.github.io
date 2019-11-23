@@ -10,9 +10,9 @@
     <meta name="description" content="Steven Philips Week 9-14 Finishing Touches">
     <title>Storm Center Reporting - CIT 230 Fall 2019 Week 9-14 - Steven Philips</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/small.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/medium.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/navbreak.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/large.css">
     <link rel="shortcut icon" href="../images/favicon48x48.ico">
 </head>
@@ -70,8 +70,9 @@
                     </div>
                     <div class="formdiv">
                         <label class="slider" for="sslider"> Storm Severity: <em>(slide to severity level)</em>
-                            &nbsp;&nbsp;&nbsp;<input type="range" id="sslider" name="slideRange" value="5" min="1" max="10" step="1"
-                                list="tickmarks" oninput="adjustSlider(this.value)" onchange="adjustSlider(this.value)">
+                            &nbsp;&nbsp;&nbsp;<input type="range" id="sslider" name="slideRange" value="5" min="1"
+                                max="10" step="1" list="tickmarks" oninput="adjustSlider(this.value)"
+                                onchange="adjustSlider(this.value)">
                             <span id="slidervalue">5</span>
                             <datalist id="tickmarks">
                                 <option value="1">1</option>
@@ -87,7 +88,7 @@
                             </datalist></label>
                         <label class="top" for="region">Storm Region
                             <select id="region" name="regionSelect">
-                                <option value="">&#9662;Select Option:&#9662;   </option>
+                                <option value="">&#9662;Select Option:&#9662; </option>
                                 <option value="0">Preston</option>
                                 <option value="1">Soda Springs</option>
                                 <option value="2">Fish Haven</option>
@@ -101,7 +102,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>Vital Information and Opinions</legend>
-                    <label class="top" for="tArea"><textarea id="tArea" name="comments" cols="60" rows="5" placeholder="Additional Information, Comments, or Concerns ... Enter here."></textarea></label>
+                    <label class="top" for="tArea"><textarea id="tArea" name="comments" cols="60" rows="5"
+                            placeholder="Additional Information, Comments, or Concerns ... Enter here."></textarea></label>
                 </fieldset>
 
                 <input type="submit" value="Send Report" class="sbmit" name="submitButton">
@@ -112,7 +114,7 @@
         <div>&copy; <span id="thisyear"></span> 6by9Weather.com | CIT 230 | Steven Philips</div>
         <span id='currentdate'></span>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="../js/master.js"></script>
 

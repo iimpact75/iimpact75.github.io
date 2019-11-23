@@ -18,7 +18,7 @@ fetch(ForeCastWeatherURL)
                 let fdate = new Date(jsObject.list[j].dt_txt);
                 let wday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-                images.setAttribute('src', "https://openweathermap.org/img/w/" + jsObject.list[j].weather[0].icon + ".png");
+                images.setAttribute('src', "http://openweathermap.org/img/w/" + jsObject.list[j].weather[0].icon + ".png");
                 images.setAttribute('alt', 'jsObject.list[j].weather[0].description');
                 thcell.textContent = wday[fdate.getDay()];
 

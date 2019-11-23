@@ -1,0 +1,72 @@
+@media only screen and (min-width: 50em) {
+    header img {
+        width: 100%;
+    }
+
+    header div h1 {
+        font-size: 5rem;
+
+    }
+
+    main h2 {
+        font-size: 4em;
+    }
+
+    .forecast,
+    .forecastable {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 1rem;
+
+    }
+
+    table {
+        table-layout: auto;
+        border-collapse: collapse;
+        margin: 1rem;
+
+    }
+
+    th,
+    tr,
+    td {
+
+        border: 2px double #a9ffcb;
+        padding: .5em;
+        align-content: center;
+        text-align: center;
+    }
+
+    .divgallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maingallery {
+        max-width: 1300px;
+    }
+
+    figcaption {
+        display: block;
+        text-align: center;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0em 0em 2em #000000;
+    }
+
+    .contact .map {
+        display: flex;
+        float: left;
+        margin: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cityintro img {
+        max-width: 500px;
+    }
+
+}

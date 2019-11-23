@@ -107,10 +107,10 @@ fetch(CurrentWeatherURL)
     .then(response => response.json())
     .then(jsObject => {
         document.getElementById("ccondition").innerHTML = jsObject.weather[0].main;
-        document.getElementById("ctemp").innerHTML = jsObject.main.temp+' &#8457';
-        document.getElementById("htemp").innerHTML = jsObject.main.temp_max + ' &#8457';
+        document.getElementById("ctemp").innerHTML = jsObject.main.temp.toFixed(0)+' &#8457';
+        document.getElementById("htemp").innerHTML = jsObject.main.temp_max.toFixed(0) + ' &#8457';
         document.getElementById("humid").innerHTML = jsObject.main.humidity +'%';
-        document.getElementById("wspeed").innerHTML = jsObject.wind.speed +'mph';
+        document.getElementById("wspeed").innerHTML = jsObject.wind.speed.toFixed(0) +' mph';
 
     });
 
@@ -137,7 +137,7 @@ fetch(ForeCastWeatherURL)
                 thcell.textContent = wday[fdate.getDay()];
 
                 ticell.appendChild(images);
-                ttcell.innerHTML = jsObject.list[j].main.temp + ' &#8457';
+                ttcell.innerHTML = jsObject.list[j].main.temp.toFixed(0) + ' &#8457';
 
                 document.querySelector('tr.row1').appendChild(thcell);
                 document.querySelector('tr.row2').appendChild(ticell);

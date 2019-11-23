@@ -37,6 +37,10 @@
         flex-direction: row;
     }
 
+    div.cityintro {
+        padding: 1rem;
+    }
+
     .cityinfo section:nth-child(even)>.cityintro {
         flex-direction: row-reverse;
     }

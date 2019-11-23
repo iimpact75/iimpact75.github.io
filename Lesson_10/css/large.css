@@ -47,11 +47,14 @@
     tr,
     td {
         border: 1px solid var(--color1); 
-        padding: 1rem;
+        padding: .5rem 1rem .5rem 1rem;
         align-content: center;
         text-align: center;
         width: 16rem;
-        border-radius: 20% 10%;
+        border-top-left-radius: 20% 10%;
+        border-top-right-radius: 20% 10%;
+        border-bottom-right-radius: 20% 10%;
+        border-bottom-left-radius: 20% 10%;
 
     }
 
@@ -60,7 +63,7 @@
         color: var(--color2);
         font-family: var(--font1);
         font-size: 1.5rem;
-        text-shadow: 5px 5px 5px #002503;
+        text-shadow: 2px 2px 6px var(--color3);
            
     }
 
@@ -69,7 +72,8 @@
     }
 
     tr:last-child{
-        background-color: var(--color5)
+        background-color: var(--color5);
+        color: var(--color1);
     }
 
     .divgallery {

@@ -36,7 +36,7 @@ function preloadImage(img) {
     if (!src) {
         return;
     } else {
-    img.src = src;
+        img.src = src;
     }
 };
 
@@ -68,7 +68,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
     .then(function (jsonObject) {
 
         const cities = jsonObject['towns'];
-        const arrCity = ['Fish Haven', 'Preston', 'Soda Springs']
+        const arrCity = ['Fish Haven', 'Preston', 'Soda Springs'];
         for (let i = 0; i < cities.length; i++) {
             if (arrCity.includes(cities[i].name)) {
                 let card = document.createElement('section');
@@ -83,35 +83,53 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
                 image.setAttribute('src', 'images/' + cities[i].photo);
                 image.setAttribute('alt', 'Represetative Picture of ' + cities[i].name);
                 history.innerHTML = ('The city of ' + cities[i].name + ' was founded in ' + cities[i].yearFounded + '. We invite you to our quiet town where our population is ' + cities[i].currentPopulation + '. The climate here is suitable for most out door activities. The annual percipitation is ' + cities[i].averageRainfall + '" for both rain and snow, making it more ideal than Great Britain. Come visit us for one of our events!')
-                
-                info.setAttribute ('class', 'cityintro');
+
+                info.setAttribute('class', 'cityintro');
                 info.appendChild(image);
                 info.appendChild(history);
-                                
+
                 card.appendChild(name);
                 card.appendChild(motto);
                 card.appendChild(info);
-                
+
                 document.querySelector('div.cityinfo').appendChild(card);
             }
-
+            const cname = document.getElementsByName('city_name')[0].getAttribute("content");
+            for (var i2 = 0; i2 < cities.length; i2++) {
+                if (cname == cities[i2].name) {
+                    for (var j = 0; j < cities[i2].events.length; j++) {
+                        var cevents = document.createElement('li');
+                        var nevent = document.createTextNode(cities[i2].events[j]);
+                        cevents.appendChild(nevent);
+                        document.querySelector('ul.event_list').appendChild(cevents);
+                    }
+                }
+            }
         }
     });
 
 //Weather demographics to be set by dynamic load off of meta tags for city page
 var cc = document.getElementsByName('city_code')[0].getAttribute("content");
-var CurrentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id="+cc+"&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
-var ForeCastWeatherURL = "https://api.openweathermap.org/data/2.5/forecast?id="+cc+"&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
+var CurrentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cc + "&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
+var ForeCastWeatherURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cc + "&APPID=44816e5905baa4f18d6261ad8ccb925a&units=imperial";
 
 fetch(CurrentWeatherURL)
     .then(response => response.json())
     .then(jsObject => {
         document.getElementById("ccondition").innerHTML = jsObject.weather[0].main;
-        document.getElementById("ctemp").innerHTML = jsObject.main.temp.toFixed(0)+' &#8457';
+        document.getElementById("ctemp").innerHTML = jsObject.main.temp.toFixed(0) + ' &#8457';
         document.getElementById("htemp").innerHTML = jsObject.main.temp_max.toFixed(0) + ' &#8457';
-        document.getElementById("humid").innerHTML = jsObject.main.humidity +'%';
-        document.getElementById("wspeed").innerHTML = jsObject.wind.speed.toFixed(0) +' mph';
+        document.getElementById("humid").innerHTML = jsObject.main.humidity + ' %';
+        document.getElementById("wspeed").innerHTML = jsObject.wind.speed.toFixed(0) + ' mph';
 
+        var ct = parseFloat(document.getElementById("ctemp").textContent);
+        var ws = parseFloat(document.getElementById("wspeed").textContent);
+
+        if ((isNaN(ct) || isNaN(ws)) || ct >= 70) {
+            document.getElementById("wchill").innerHTML = "N/A";
+        } else {
+            document.getElementById("wchill").innerHTML = windchill(ct, ws) + ' &#8457';
+        }
     });
 
 fetch(ForeCastWeatherURL)
@@ -146,17 +164,7 @@ fetch(ForeCastWeatherURL)
         };
     });
 
-
 //wind chill calculator
-var ct = parseFloat(document.getElementById("ctemp").textContent);
-var ws = parseFloat(document.getElementById("wspeed").textContent);
-
-if ((isNaN(ct) || isNaN(ws)) || ct>=70) {
-    document.getElementById("wchill").innerHTML = "N/A"
-} else {
-    document.getElementById("wchill").innerHTML = windchill(ct, ws) + '&#8457';
-}
-
 function windchill(tempF, speed) {
-    return (Math.round(100 * (35.74 + (0.6215 * tempF) - (35.75 * speed**0.16) + (0.4275 * tempF * speed**0.16))) / 100);
+    return Math.round(Math.round(100 * (35.74 + (0.6215 * tempF) - (35.75 * speed ** 0.16) + (0.4275 * tempF * speed ** 0.16))) / 100);
 };

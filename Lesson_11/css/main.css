@@ -338,29 +338,6 @@ footer {
 
 }
 
-.contact {
-    display: block;
-    background: var(--color5);
-}
-
-.contact .map {
-    display: none;
-}
-
-.contact p img {
-    width: 2rem;
-}
-
-.socially {
-    display: flex;
-    flex-flow: row;
-}
-
-.socially img {
-    min-width: 40px;
-    max-width: 40px;
-}
-
 .divgallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -383,10 +360,6 @@ footer {
 figcaption {
     display: none;
     margin: 0;
-}
-
-div.cityinfo {
-
 }
 
 div.cityinfo section {
@@ -422,4 +395,40 @@ div.cityinfo section {
 .cityintro p {
     margin: 0;
     padding: .25rem;
+}
+
+.plink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact {
+    display: block;
+    background: var(--color5);
+    padding: 1rem;
+}
+.contact p{
+    margin:auto;
+}
+
+.contact .map {
+    display: none;
+}
+.name6x9 img {
+    max-width: 2rem;
+
+}
+.name6x9 p {
+    font-family: var(--font1);
+    font-size: 2rem;
+}
+.socially {
+    display: flex;
+    flex-flow: row;
+    margin: none;
+}
+
+.socially img {
+    min-width: 40px;
+    max-width: 40px;
 }

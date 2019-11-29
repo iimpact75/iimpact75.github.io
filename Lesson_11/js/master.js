@@ -71,6 +71,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
         const arrCity = ['Fish Haven', 'Preston', 'Soda Springs'];
         for (let i = 0; i < cities.length; i++) {
             if (arrCity.includes(cities[i].name)) {
+                let plink = document.createElement('a')
                 let card = document.createElement('section');
                 let info = document.createElement('div');
                 let name = document.createElement('h2');
@@ -91,8 +92,11 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
                 card.appendChild(name);
                 card.appendChild(motto);
                 card.appendChild(info);
+                plink.appendChild(card);
+                plink.setAttribute('class','plink');
+                plink.setAttribute('href', 'pages/'+cities[i].name.replace(/\s/g,"_").toLowerCase()+'.html');
 
-                document.querySelector('div.cityinfo').appendChild(card);
+                document.querySelector('div.cityinfo').appendChild(plink);
             }
             const cname = document.getElementsByName('city_name')[0].getAttribute("content");
             for (var i2 = 0; i2 < cities.length; i2++) {

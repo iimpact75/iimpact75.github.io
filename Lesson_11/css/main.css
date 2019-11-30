@@ -142,6 +142,15 @@ main h2 {
 
 }
 
+.topnews article a h2 {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #ff0000;
+    color: #000000;
+
+
+}
+
 form fieldset {
     border: 1px solid var(--color1);
     border-top-left-radius: 20% 10%;
@@ -236,14 +245,6 @@ input.sbmit {
     padding: 0.75rem;
 }
 
-footer {
-    background-color: var(--color1);
-    font-family: 'Gudea', sans-serif;
-    color: var(--color5);
-    text-align: center;
-    padding: 5px 2%;
-}
-
 .hero {
     display: flex;
     position: relative;
@@ -318,10 +319,24 @@ footer {
     display: none;
 }
 
+.local_events {
+    display: block;
+    max-width: 40rem;
+    padding: 1rem;
+    margin: 1rem auto 1rem auto;
+    background-color: var(--color2);
+    border-top-left-radius: 20% 10%;
+    border-top-right-radius: 20% 10%;
+    border-bottom-right-radius: 20% 10%;
+    border-bottom-left-radius: 20% 10%;
+    box-shadow: .5rem .5rem .5rem var(--color3);
+}
+
 .info {
     display: block;
     background: #e3e7d3;
     border: 2px solid #a7ad8e;
+    border-radius: .75rem;
     margin: 1rem;
     padding: 1rem;
 }
@@ -334,8 +349,6 @@ footer {
     max-width: 300px;
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-
-
 }
 
 .divgallery {
@@ -368,21 +381,18 @@ div.cityinfo section {
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 2rem .125rem var(--color5);
-
 }
 
 .cityinfo section h2,
 .cityinfo section h3 {
     text-align: center;
     margin: 0;
-
 }
 
 .cityintro {
     display: flex;
     flex-flow: column;
     align-items: center;
-
 }
 
 .cityintro img {
@@ -397,7 +407,7 @@ div.cityinfo section {
     padding: .25rem;
 }
 
-.plink{
+.plink {
     text-decoration: none;
     color: #000000;
 }
@@ -407,21 +417,24 @@ div.cityinfo section {
     background: var(--color5);
     padding: 1rem;
 }
-.contact p{
-    margin:auto;
+
+.contact p {
+    margin: auto;
 }
 
 .contact .map {
     display: none;
 }
+
 .name6x9 img {
     max-width: 2rem;
-
 }
+
 .name6x9 p {
     font-family: var(--font1);
     font-size: 2rem;
 }
+
 .socially {
     display: flex;
     flex-flow: row;
@@ -431,4 +444,12 @@ div.cityinfo section {
 .socially img {
     min-width: 40px;
     max-width: 40px;
+}
+
+footer {
+    background-color: var(--color1);
+    font-family: 'Gudea', sans-serif;
+    color: var(--color5);
+    text-align: center;
+    padding: 5px 2%;
 }

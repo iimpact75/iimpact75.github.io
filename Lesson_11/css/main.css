@@ -330,6 +330,11 @@ input.sbmit {
     border-bottom-right-radius: 20% 10%;
     border-bottom-left-radius: 20% 10%;
     box-shadow: .5rem .5rem .5rem var(--color3);
+    border: .5rem solid;
+    border-top-color: #e3e7d3;
+    border-right-color: #ffffff;
+    border-bottom-color: #e3e7d3;
+    border-left-color: #c7c7c7;
 }
 
 .info {
@@ -452,4 +457,9 @@ footer {
     color: var(--color5);
     text-align: center;
     padding: 5px 2%;
+}
+
+footer div a {
+    text-decoration: none;
+    color: var(--color5);
 }

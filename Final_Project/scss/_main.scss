@@ -1,0 +1,164 @@
+:root {
+    --color1: #001d4a;
+    --color2: #33658a;
+    --color3: #86bbd8;
+    --color4: #f6ae2d;
+    --color5: #f26419;
+    --colorB: #000000;
+    --colorW: #ffffff;
+    --font1: 'Merriweather', serif;
+    --font2: 'Montserrat', sans-serif;
+}
+
+html {
+    font-family: var(--font2);
+    max-width: 100rem;
+    margin: auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font1);
+    margin: 1rem;
+    text-align: center;
+    color: var(--color2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    flex-flow: column;
+    color: var(--color2);
+    width: 100%;
+
+    div {
+        display: flex;
+        flex-flow: column;
+        margin: 1rem;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 5px 5px 10px var(--colorB);
+            color: var(--color3);
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        line-height: 2em;
+
+        li {
+            display: none;
+            list-style: none;
+            line-height: 40px;
+            text-align: center;
+            width: 125px;
+
+            ul li {
+                display: none;
+            }
+            ul li:hover{
+                animation-name: hoverEmphasisSub;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+            
+
+
+        }
+
+        li:hover ul li {
+            display: block;
+
+            a {
+                background-color: var(--color1);
+
+            }
+
+        }
+
+        li:first-child {
+            display: block;
+        }
+
+        a {
+            display: block;
+            color: var(--color4);
+            text-decoration: none;
+            background-color: var(--colorW);
+            border: 1px solid var(--color5);
+            padding: 0 .5rem 0 .5rem;
+
+        }
+
+        a:hover,
+        .urhere {
+            background-color: var(--color4);
+            border: 1px solid var(--color5);
+            color: var(--colorW);
+            animation-name: hoverEmphasis;
+            animation-duration: 2s;
+            
+
+        }
+    }
+
+}
+
+@keyframes hoverEmphasis {
+    0% {
+        background-color: var(--colorW);
+        text-decoration: none;
+        color: var(--color4);
+    }
+
+    100% {
+        background-color: var(--color4);
+        text-decoration: underline;
+        color: var(--colorW);
+    }
+}
+
+.responsive li {
+    width: 100%;
+    display: block;
+    ul li {
+        display: none;
+
+        a {
+            background-color: var(--color1);
+        }
+    }
+}
+
+footer {
+    display: block;
+    background-color: var(--color1);
+    color: var(--color4);
+    margin: auto;
+    padding: .5rem 2rem .5rem 2rem;
+    max-width: 100rem;
+    justify-content: center;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: var(--color4);
+    }
+}

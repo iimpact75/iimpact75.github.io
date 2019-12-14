@@ -1,0 +1,28 @@
+header {
+    flex-flow: row;
+}
+
+nav {
+    height: 80px;
+    ul {
+        display: flex;
+        li {
+            display: block;
+
+            ul li {
+                display: none;
+            }
+        }
+        li:first-child {
+            display: none;
+        }
+        li:hover ul li {
+            display: flex;
+        }
+    }
+
+}
+
+.responsive li {
+    width: 125px;
+}

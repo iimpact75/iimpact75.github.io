@@ -12,8 +12,10 @@
 
 html {
     font-family: var(--font2);
+    color: var(--color1);
     max-width: 100rem;
     margin: auto;
+    padding: 0rem 1rem 0rem 1rem;
 
 }
 
@@ -74,12 +76,13 @@ nav {
             ul li {
                 display: none;
             }
-            ul li:hover{
+
+            ul li:hover {
                 animation-name: hoverEmphasisSub;
                 animation-duration: 2s;
                 animation-fill-mode: forwards;
             }
-            
+
 
 
         }
@@ -115,7 +118,7 @@ nav {
             color: var(--colorW);
             animation-name: hoverEmphasis;
             animation-duration: 2s;
-            
+
 
         }
     }
@@ -139,12 +142,73 @@ nav {
 .responsive li {
     width: 100%;
     display: block;
+
     ul li {
         display: none;
 
         a {
             background-color: var(--color1);
         }
+    }
+}
+
+
+.IntroReserve {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        min-width: 275px;
+
+    }
+
+    button {
+        padding: 1rem 1rem 1rem 1rem;
+        background-color: var(--color5);
+        border: 5px double var(--color1);
+        position: absolute;
+        bottom: 5%;
+        left: 25%;
+        width: 50%;
+        min-width: 100px;
+    }
+
+    button:hover {
+        background-color: var(--color1);
+        border: 5px double var(--color5);
+        color: var(--colorW);
+    }
+}
+
+.AboutUs {
+    display: grid;
+
+    a {
+        text-decoration: none;
+        color: var(--color1);
+    }
+
+    h2 {
+        text-decoration: none;
+        color: var(--color1);
+    }
+
+    section {
+        padding: 1rem;
+        min-width: 275px;
+        max-width: 96%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        min-width: 275px;
     }
 }
 
@@ -157,7 +221,8 @@ footer {
     max-width: 100rem;
     justify-content: center;
     text-align: center;
-    a{
+
+    a {
         text-decoration: none;
         color: var(--color4);
     }

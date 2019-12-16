@@ -4,8 +4,10 @@ header {
 
 nav {
     height: 80px;
+
     ul {
         display: flex;
+
         li {
             display: block;
 
@@ -13,9 +15,11 @@ nav {
                 display: none;
             }
         }
+
         li:first-child {
             display: none;
         }
+
         li:hover ul li {
             display: flex;
         }
@@ -25,4 +29,14 @@ nav {
 
 .responsive li {
     width: 125px;
+}
+
+.IntroReserve {
+    img {
+        max-width: 600px;
+
+    }
+}
+.AboutUs {
+    grid-template-columns: repeat(2, 1fr);
 }

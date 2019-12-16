@@ -11,8 +11,10 @@
 
 html {
   font-family: var(--font2);
+  color: var(--color1);
   max-width: 100rem;
-  margin: auto; }
+  margin: auto;
+  padding: 0rem 1rem 0rem 1rem; }
 
 h1,
 h2,
@@ -101,6 +103,48 @@ nav ul {
     .responsive li ul li a {
       background-color: var(--color1); }
 
+.IntroReserve {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative; }
+  .IntroReserve img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 275px; }
+  .IntroReserve button {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--color5);
+    border: 5px double var(--color1);
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    width: 50%;
+    min-width: 100px; }
+  .IntroReserve button:hover {
+    background-color: var(--color1);
+    border: 5px double var(--color5);
+    color: var(--colorW); }
+
+.AboutUs {
+  display: grid; }
+  .AboutUs a {
+    text-decoration: none;
+    color: var(--color1); }
+  .AboutUs h2 {
+    text-decoration: none;
+    color: var(--color1); }
+  .AboutUs section {
+    padding: 1rem;
+    min-width: 275px;
+    max-width: 96%; }
+  .AboutUs img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 275px; }
+
 footer {
   display: block;
   background-color: var(--color1);
@@ -132,4 +176,16 @@ footer {
         display: flex; }
 
   .responsive li {
-    width: 125px; } }
+    width: 125px; }
+
+  .IntroReserve img {
+    max-width: 600px; }
+
+  .AboutUs {
+    grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (min-width: 1028px) {
+  .IntroReserve img {
+    max-width: 1000px; }
+
+  .AboutUs {
+    grid-template-columns: repeat(3, 1fr); } }

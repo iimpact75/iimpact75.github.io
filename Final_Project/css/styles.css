@@ -103,6 +103,9 @@ nav ul {
     .responsive li ul li a {
       background-color: var(--color1); }
 
+figcaption {
+  font-size: smaller; }
+
 .IntroReserve {
   display: block;
   margin: auto;
@@ -120,9 +123,11 @@ nav ul {
     border: 5px double var(--color1);
     position: absolute;
     bottom: 5%;
-    left: 25%;
-    width: 50%;
-    min-width: 100px; }
+    left: 33%;
+    width: 33%;
+    min-width: 100px;
+    box-shadow: 5px 5px 5px var(--colorB);
+    border-radius: 5px; }
   .IntroReserve button:hover {
     background-color: var(--color1);
     border: 5px double var(--color5);
@@ -137,13 +142,59 @@ nav ul {
     text-decoration: none;
     color: var(--color1); }
   .AboutUs section {
-    padding: 1rem;
+    display: block;
     min-width: 275px;
-    max-width: 96%; }
-  .AboutUs img {
+    max-width: 500px;
+    background-color: var(--color3);
+    margin: 1rem;
+    padding: 1rem;
+    height: 550px; }
+    .AboutUs section img {
+      width: 100%;
+      max-width: 400px;
+      min-width: 275px;
+      box-shadow: 0px 0 10px 5px var(--colorB); }
+
+form {
+  display: flex;
+  flex-flow: column;
+  max-width: 600px;
+  margin: auto; }
+  form label.top input {
+    display: block; }
+  form fieldset {
+    border: 4px double var(--color5);
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: .5rem; }
+  form label input:required {
+    border-left: 3px double #ff0000; }
+  form label input:required:valid {
+    border-left: 3px solid #12cc5f; }
+  form .sbmit {
+    display: block;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--color5);
+    border: 5px double var(--color1);
+    left: 50%;
+    width: 33%;
+    min-width: 100px;
+    box-shadow: 5px 5px 5px var(--colorB);
+    border-radius: 5px; }
+  form .sbmit:hover {
+    background-color: var(--color1);
+    border: 5px double var(--color5);
+    color: var(--colorW); }
+
+div.contactUs {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 600px; }
+  div.contactUs iframe {
     width: 100%;
-    max-width: 400px;
-    min-width: 275px; }
+    max-width: 600px;
+    border: 2px outset var(--color5);
+    border-radius: 10% 10% 10% 10%; }
 
 footer {
   display: block;
@@ -182,10 +233,13 @@ footer {
     max-width: 600px; }
 
   .AboutUs {
+    grid-template-columns: repeat(1, 1fr); } }
+@media only screen and (min-width: 875px) {
+  .AboutUs {
     grid-template-columns: repeat(2, 1fr); } }
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 1025px) {
   .IntroReserve img {
-    max-width: 1000px; }
-
+    max-width: 1000px; } }
+@media only screen and (min-width: 1300px) {
   .AboutUs {
     grid-template-columns: repeat(3, 1fr); } }

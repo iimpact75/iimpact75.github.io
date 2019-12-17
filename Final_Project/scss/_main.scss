@@ -152,6 +152,9 @@ nav {
     }
 }
 
+figcaption {
+    font-size: smaller;
+}
 
 .IntroReserve {
     display: block;
@@ -174,9 +177,11 @@ nav {
         border: 5px double var(--color1);
         position: absolute;
         bottom: 5%;
-        left: 25%;
-        width: 50%;
+        left: 33%;
+        width: 33%;
         min-width: 100px;
+        box-shadow: 5px 5px 5px var(--colorB);
+        border-radius: 5px;
     }
 
     button:hover {
@@ -200,15 +205,79 @@ nav {
     }
 
     section {
-        padding: 1rem;
+        display: block;
         min-width: 275px;
-        max-width: 96%;
+        max-width: 500px;
+        background-color: var(--color3);
+        margin: 1rem;
+        padding: 1rem;
+        height: 550px;
+
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            min-width: 275px;
+            box-shadow: 0px 0 10px 5px var(--colorB);
+        }
     }
 
-    img {
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    max-width: 600px;
+    margin: auto;
+
+    label.top input {
+        display: block;
+    }
+
+    fieldset {
+        border: 4px double var(--color5);
+        border-radius: 1rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    label input:required {
+        border-left: 3px double #ff0000;
+    }
+
+    label input:required:valid {
+        border-left: 3px solid #12cc5f;
+    }
+
+    .sbmit {
+        display: block;
+        padding: 1rem 1rem 1rem 1rem;
+        background-color: var(--color5);
+        border: 5px double var(--color1);
+        left: 50%;
+        width: 33%;
+        min-width: 100px;
+        box-shadow: 5px 5px 5px var(--colorB);
+        border-radius: 5px;
+    }
+
+    .sbmit:hover {
+        background-color: var(--color1);
+        border: 5px double var(--color5);
+        color: var(--colorW);
+    }
+}
+
+div.contactUs {
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 600px;
+    iframe {
         width: 100%;
-        max-width: 400px;
-        min-width: 275px;
+        max-width: 600px;
+        border: 2px outset var(--color5);
+        border-radius: 10% 10% 10% 10%;
+        
     }
 }
 

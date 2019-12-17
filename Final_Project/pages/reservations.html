@@ -35,14 +35,95 @@
                 <li><a href="../pages/services.html">Services</a>
                     <ul>
                         <li><a href="../pages/conference.html">Parties</a>
-                        <li><a href="../pages/missionaries.html">Extended Stays</a></li>
+                        <li><a href="../pages/missionaries.html">Patrons</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </nav>
     <main>
-        <p>Reservations form goes here</p>
+        <div>
+            <h1>Make Your Reservations</h1>
+            <form action="../pages/thanks.html" method="get" title="Reservations">
+                <fieldset>
+                    <legend>Your Information:</legend>
+                    <label class="top" for="name">Full Name*<input type="text" id="name" name="name" minlength="5"
+                            pattern="[^0-9]+[a-zA-Z\s]{4,}" required autocomplete="name"></label>
+                    <label class="top" for="email">Email Address*<input type="email" id="email" name="email"
+                            minlength="12" placeholder="sender@mail.com" required autocomplete="email"></label>
+                    <label class="top" for="phone">Phone Number*<input type="tel" id="phone" name="phone" minlength="5"
+                            placeholder="1234567890" required autocomplete="tel"></label>
+                    <label class="top" for="state">State*<input type="text" id="state" name="ship-state" minlength="2"
+                            placeholder="TX" autocomplete="address-level1"></label>
+                    <label class="top" for="country">Country<input type="text" id="country" name="country" minlength="2"
+                            autocomplete="country"></label>
+                    <label class="top" for="zip">Zip Code*<input type="number" id="zip" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Room Reservation Request:</legend>
+                    <label class="top" for="adate">Arriving Date:<input type="date" id="adate" name="adate"></label>
+                    <label class="top" for="ddate">Departing Date:<input type="date" id="ddate" name="ddate"></label>
+                    <hr>
+                    <div class="formdiv">
+                        <label class="top" for="rooms1">Number of Rooms:
+                            <select id="rooms1" name="numberRooms1">
+                                <option value="">&#9662;Select&#9662; </option>
+                                <option value="0">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                            </select></label>
+                    </div>
+                    <div class="formdiv">Room Type:
+                        <label class="rt" for="dc1"><input type="radio" id="dc1" name="roomtype1">Double Queen</label>
+                        <label class="rt" for="sk1"><input type="radio" id="sk1" name="roomtype1">Single King</label>
+                        <label class="rt" for="dk1"><input type="radio" id="dk1" name="roomtype1">Double King
+                            Suite</label>
+                    </div>
+                    <hr>
+                    <div class="formdiv">
+                        <label class="top" for="rooms2">Number of Rooms:
+                            <select id="rooms2" name="numberRooms2">
+                                <option value="">&#9662;Select&#9662; </option>
+                                <option value="0">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                            </select></label>
+                    </div>
+                    <div class="formdiv">Room Type:
+                        <label class="rt" for="dc2"><input type="radio" id="dc2" name="roomtype2">Double Queen</label>
+                        <label class="rt" for="sk2"><input type="radio" id="sk2" name="roomtype2">Single King</label>
+                        <label class="rt" for="dk2"><input type="radio" id="dk2" name="roomtype2">Double King
+                            Suite</label>
+                    </div>
+                    <hr>
+                    <div class="formdiv">
+                        <label class="top" for="rooms3">Number of Rooms:
+                            <select id="rooms3" name="numberRooms3">
+                                <option value="">&#9662;Select&#9662; </option>
+                                <option value="0">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                            </select></label>
+                    </div>
+                    <div class="formdiv">Room Type:
+                        <label class="rt" for="dc3"><input type="radio" id="dc3" name="roomtype3">Double Queen</label>
+                        <label class="rt" for="sk3"><input type="radio" id="sk3" name="roomtype3">Single King</label>
+                        <label class="rt" for="dk3"><input type="radio" id="dk3" name="roomtype3">Double King
+                            Suite</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>You special accomodations or comments:</legend>
+                    <label class="top" for="tArea"><textarea id="tArea" name="comments" cols="60" rows="5"
+                            placeholder="Additional Information, Comments, or Concerns ... Enter here."></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Make Reservation" class="sbmit" name="submitButton">
+            </form>
+        </div>
     </main>
     <footer>
         <div>&copy; <span id="thisyear"></span> TemplesInnAndSuites.com | CIT 230 | Steven Philips | <a

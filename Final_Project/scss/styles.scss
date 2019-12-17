@@ -4,6 +4,12 @@
 @media only screen and (min-width: 655px) {
     @import "medium";
 }
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 875px) {
+    @import "large1";
+}
+@media only screen and (min-width: 1025px) {
     @import "large";
+}
+@media only screen and (min-width: 1300px) {
+    @import "xlarge";
 }

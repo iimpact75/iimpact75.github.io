@@ -41,3 +41,21 @@ nav {
     grid-template-columns: repeat(1, 1fr);
 
 }
+
+.amenities{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    ul{
+        list-style-image: url("../images/bullet.gif");
+        ul {
+            list-style-image: none; 
+        }
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}

@@ -77,7 +77,7 @@ nav ul {
     text-decoration: none;
     background-color: var(--colorW);
     border: 1px solid var(--color5);
-    padding: 0 .5rem 0 .5rem; }
+    padding: 0 .2rem 0 .5rem; }
   nav ul a:hover,
   nav ul .urhere {
     background-color: var(--color4);
@@ -104,27 +104,28 @@ nav ul {
       background-color: var(--color1); }
 
 figcaption {
-  font-size: smaller; }
+  font-size: smaller;
+  margin: 1rem; }
 
 .IntroReserve {
   display: block;
   margin: auto;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
   .IntroReserve img {
     width: 100%;
     max-width: 500px;
-    min-width: 275px; }
+    min-width: 275px;
+    position: relative; }
   .IntroReserve button {
     padding: 1rem 1rem 1rem 1rem;
     background-color: var(--color5);
     border: 5px double var(--color1);
     position: absolute;
-    bottom: 5%;
-    left: 33%;
-    width: 33%;
+    bottom: 15%;
+    left: 40%;
+    width: 20%;
     min-width: 100px;
     box-shadow: 5px 5px 5px var(--colorB);
     border-radius: 5px; }
@@ -137,7 +138,8 @@ figcaption {
   display: grid; }
   .AboutUs a {
     text-decoration: none;
-    color: var(--color1); }
+    color: var(--color1);
+    margin: auto; }
   .AboutUs h2 {
     text-decoration: none;
     color: var(--color1); }
@@ -186,6 +188,22 @@ form {
     border: 5px double var(--color5);
     color: var(--colorW); }
 
+.amenities {
+  display: none; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color3);
+  margin: 1rem .25rem .25rem 1rem; }
+  .gallery figure {
+    display: flex;
+    flex-direction: column; }
+  .gallery img {
+    box-shadow: 0px 0px 20px 5px var(--color1);
+    width: 96%;
+    max-width: 400px; }
+
 div.contactUs {
   display: block;
   margin: 0 auto 2rem auto;
@@ -195,6 +213,13 @@ div.contactUs {
     max-width: 600px;
     border: 2px outset var(--color5);
     border-radius: 10% 10% 10% 10%; }
+
+.terms {
+  display: block;
+  max-width: 800px;
+  margin: auto; }
+  .terms ul {
+    list-style-image: url("../images/bullet.gif"); }
 
 footer {
   display: block;
@@ -233,13 +258,33 @@ footer {
     max-width: 600px; }
 
   .AboutUs {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+
+  .amenities {
+    display: block;
+    margin: auto;
+    max-width: 800px; }
+    .amenities ul {
+      list-style-image: url("../images/bullet.gif"); }
+      .amenities ul ul {
+        list-style-image: none; }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 @media only screen and (min-width: 875px) {
   .AboutUs {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); } }
 @media only screen and (min-width: 1025px) {
   .IntroReserve img {
     max-width: 1000px; } }
 @media only screen and (min-width: 1300px) {
   .AboutUs {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); } }

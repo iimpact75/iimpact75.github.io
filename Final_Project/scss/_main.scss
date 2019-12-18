@@ -92,9 +92,7 @@ nav {
 
             a {
                 background-color: var(--color1);
-
             }
-
         }
 
         li:first-child {
@@ -107,8 +105,7 @@ nav {
             text-decoration: none;
             background-color: var(--colorW);
             border: 1px solid var(--color5);
-            padding: 0 .5rem 0 .5rem;
-
+            padding: 0 .2rem 0 .5rem;
         }
 
         a:hover,
@@ -118,8 +115,6 @@ nav {
             color: var(--colorW);
             animation-name: hoverEmphasis;
             animation-duration: 2s;
-
-
         }
     }
 
@@ -154,6 +149,7 @@ nav {
 
 figcaption {
     font-size: smaller;
+    margin: 1rem;
 }
 
 .IntroReserve {
@@ -162,13 +158,13 @@ figcaption {
     justify-content: center;
     text-align: center;
     align-items: center;
-    position: relative;
+
 
     img {
         width: 100%;
         max-width: 500px;
         min-width: 275px;
-
+        position: relative;
     }
 
     button {
@@ -176,9 +172,9 @@ figcaption {
         background-color: var(--color5);
         border: 5px double var(--color1);
         position: absolute;
-        bottom: 5%;
-        left: 33%;
-        width: 33%;
+        bottom: 15%;
+        left: 40%;
+        width: 20%;
         min-width: 100px;
         box-shadow: 5px 5px 5px var(--colorB);
         border-radius: 5px;
@@ -197,6 +193,7 @@ figcaption {
     a {
         text-decoration: none;
         color: var(--color1);
+        margin: auto;
     }
 
     h2 {
@@ -212,7 +209,6 @@ figcaption {
         margin: 1rem;
         padding: 1rem;
         height: 550px;
-
 
         img {
             width: 100%;
@@ -268,16 +264,49 @@ form {
     }
 }
 
+.amenities {
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color3);
+    margin: 1rem .25rem .25rem 1rem;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        box-shadow: 0px 0px 20px 5px var(--color1);
+        width: 96%;
+        max-width: 400px;
+    }
+}
+
+
 div.contactUs {
     display: block;
     margin: 0 auto 2rem auto;
     max-width: 600px;
+
     iframe {
         width: 100%;
         max-width: 600px;
         border: 2px outset var(--color5);
         border-radius: 10% 10% 10% 10%;
-        
+    }
+}
+
+.terms {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+
+    ul {
+        list-style-image: url("../images/bullet.gif");
     }
 }
 

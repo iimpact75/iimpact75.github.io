@@ -61,23 +61,42 @@ fetch('../js/temples.json')
         return response.json();
     })
     .then(function (jsonObject) {
-           
-            const temples = jsonObject['temples'];
-            for (let i = 0; i < temples.length; i++) {
-                let card = document.createElement('section');
-                let name = document.createElement('h2');
-                let birthinfo = document.createElement('p');
-                let image= document.createElement('img');
-                
 
-                name.textContent = temples[i].TempleName;
-                //createdinfo.innerHTML = "Date Announced: "+ temples[i].Announced + "<br>"+"Place of Birth: "+temples[i].Dedicated;
-                image.setAttribute('src', temples[i].ImageURL);
-                //image.setAttribute('alt', 'A picture of a temple of The Church of Jesus Christ of Latter-day Saints, Prophet:'+ TempleName);
-                                
-                card.appendChild(name);
-                
-                card.appendChild(image);
+        const temples = jsonObject['temples'];
+        for (var i = 0; i < temples.length; i++) {
+            let plink = document.createElement('a')
+            let card = document.createElement('section');
+            let name = document.createElement('h2');
+            let image = document.createElement('img');
+            let history = document.createElement('p');
+            let thaddress = document.createElement('h3');
+            let tpaddress = document.createElement('p');
+            let thschedule = document.createElement('h3');
+            let tpschedule = document.createElement('p');
+
+            name.textContent = temples[i].TempleName;
+            image.setAttribute('src', temples[i].ImageURL);
+            image.setAttribute('alt', 'A picture of a temple of The Church of Jesus Christ of Latter-day Saints, Prophet:' + temples[i].TempleName);
+            history.innerHTML = "The uniquely beautiful " + temples[i].TempleName +
+                " was announced on: " + temples[i].Announced +
+                " and dedicated: " + temples[i].Dedicated +
+                ". See below for temple information or click here to go to the official temple webpage hosted by The Church of Jesus Christ of Latter-day Saints.";
+            thaddress.innerHTML = "Address:";
+            tpaddress.innerHTML = temples[i].Address + "<br>" + temples[i].City + "<br>" + temples[i].State + "<br>" + temples[i].Country + "<br>" + temples[i].PostalCode;
+            thschedule.innerHTML = "Schedule:";
+            tpschedule.innerHTML = "Current Status: " + temples[i].Status + "<br>";
+
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(history);
+            card.appendChild(thaddress);
+            card.appendChild(tpaddress);
+            card.appendChild(thschedule);
+            card.appendChild(tpschedule);
            
-                document.querySelector('div.cards').appendChild(card);
-            }});
+            plink.appendChild(card);
+            plink.setAttribute('href', temples[i].URL);
+
+            document.querySelector('div.cards').appendChild(plink);
+        }
+    });

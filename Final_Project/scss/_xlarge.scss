@@ -1,4 +1,4 @@
-.AboutUs {
+.AboutUs, .cards {
     grid-template-columns: repeat(3, 1fr);
     
 }
@@ -6,4 +6,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
    
+}
+
+#specific {
+    grid-template-columns: repeat(2, 1fr);
+    
 }

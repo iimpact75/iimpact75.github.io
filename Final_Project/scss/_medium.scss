@@ -37,10 +37,11 @@ nav {
 
     }
 }
-.AboutUs {
+.AboutUs, .cards {
     grid-template-columns: repeat(1, 1fr);
 
 }
+
 
 .amenities{
     display: block;

@@ -48,6 +48,9 @@ header {
     width: 100%;
     max-width: 100px; }
 
+div, section, img {
+  border-radius: 10px; }
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -145,7 +148,6 @@ figcaption {
     color: var(--color1); }
   .AboutUs section {
     display: block;
-    min-width: 275px;
     max-width: 500px;
     background-color: var(--color3);
     margin: 1rem;
@@ -154,8 +156,10 @@ figcaption {
     .AboutUs section img {
       width: 100%;
       max-width: 400px;
-      min-width: 275px;
-      box-shadow: 0px 0 10px 5px var(--colorB); }
+      box-shadow: 0px 0 10px 5px var(--color1); }
+    .AboutUs section p {
+      max-width: 400;
+      line-height: 1.25rem; }
 
 form {
   display: flex;
@@ -187,6 +191,29 @@ form {
     background-color: var(--color1);
     border: 5px double var(--color5);
     color: var(--colorW); }
+
+.cards {
+  display: grid; }
+  .cards a {
+    text-decoration: none;
+    color: var(--color1);
+    margin: auto; }
+  .cards h2 {
+    text-decoration: none;
+    color: var(--color1); }
+  .cards section {
+    display: block;
+    max-width: 500px;
+    background-color: var(--color4);
+    margin: 1rem;
+    padding: 2rem; }
+    .cards section img {
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0px 0 10px 5px var(--color5); }
+    .cards section p {
+      max-width: 400px;
+      line-height: 1.25rem; }
 
 .amenities {
   display: none; }
@@ -257,7 +284,7 @@ footer {
   .IntroReserve img {
     max-width: 600px; }
 
-  .AboutUs {
+  .AboutUs, .cards {
     grid-template-columns: repeat(1, 1fr); }
 
   .amenities {
@@ -273,7 +300,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); } }
 @media only screen and (min-width: 875px) {
-  .AboutUs {
+  .AboutUs, .cards {
     grid-template-columns: repeat(2, 1fr); }
 
   .gallery {
@@ -282,9 +309,12 @@ footer {
   .IntroReserve img {
     max-width: 1000px; } }
 @media only screen and (min-width: 1300px) {
-  .AboutUs {
+  .AboutUs, .cards {
     grid-template-columns: repeat(3, 1fr); }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+
+  #specific {
+    grid-template-columns: repeat(2, 1fr); } }

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+:root {
+    --color1: #6495ED;
+    --color2: #FAEBD7;
+    --color3: #DEB887;
+    --colorW: #ffffff;
+    --colorB: #000000;
+    --font1: 'Lora', serif;
+    --font2: 'Helvetica', 'Arial', sans-serif;
+}
+
+html {
+
+    font-family: var(--font2);
+    margin: none;
+    padding: 0px;
+    text-decoration: none;
+
+}
+
+h1,
+h2 {
+    font-family: var(--font1);
+}
+
+body {
+    padding: none;
+    margin: none;
+}
+
+body div {
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align:right;
+    max-width: 100%;
+    min-width: 150px;
+    padding: 2rem;
+}
+
+img {
+    width: 96%;
+    min-width: 100px;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-size: smaller;
+}
+
+main {
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: var(--color2);
+}
+
+main article {
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: var(--colorW);
+}
+
+@media only screen and (min-width: 500px){
+    body div {
+        flex-flow: row;
+    }
+    
+}

@@ -66,8 +66,9 @@ ul a:hover{
     text-decoration: underline;
 }
 
-/* This is to show the active link. Given there are minimal instruction you have to assume you are looking at a page of reviews thus signaling the active menu item.*/
-header ul li:nth-child(2)>a { 
+
+header ul li a:active,
+main article h2 a:active { 
     color: var(--color3);
 }
 
@@ -105,17 +106,11 @@ main article p a{
     color: var(--color1);
 }
 
-/*there is no way to set the active in this per the instruction so the second nth-child was selected as active*/
-main article:nth-child(2) h2 a {
-    color: var(--color3);
-}
-
 main article p a:hover {
     text-decoration: underline;
 }
 
-/*there is no way to set the active in this per the instruction so the second one was selected as active*/
-main article:nth-child(2) p a{
+main article p a:active {
     color: var(--color3);
     text-decoration: underline;
 }

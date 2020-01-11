@@ -5,6 +5,7 @@
     --color2: #FAEBD7;
     --color3: #DEB887;
     --colorW: #ffffff;
+    --colorG: #a3a3a3;
     --colorB: #000000;
     --font1: 'Lora', serif;
     --font2: 'Helvetica', 'Arial', sans-serif;
@@ -16,7 +17,6 @@ html {
     margin: none;
     padding: 0px;
     text-decoration: none;
-
 }
 
 h1,
@@ -39,20 +39,41 @@ header {
     color: var(--color2);
     text-align:right;
     max-width: 100%;
-    min-width: 150px;
+    min-width: 175px;
     padding: 2rem;
+}
+ figure {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 1rem 0;
 }
 
 img {
+
     width: 96%;
     min-width: 100px;
+    max-width: 300px;
 }
 
-ul {
+header ul {
     list-style: none;
     text-decoration: none;
-    line-height: 1.5rem;
-    font-size: smaller;
+    line-height: 2rem;
+}
+
+ul a:hover{
+    color: var(--colorW);
+    text-decoration: underline;
+}
+
+/* This is to show the active link. Given there are minimal instruction you have to assume you are looking at a page of reviews thus signaling the active menu item.*/
+header ul li:nth-child(2)>a { 
+    color: var(--color3);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color2);
 }
 
 main {
@@ -61,14 +82,50 @@ main {
 }
 
 main article {
-    padding: 2rem 2rem 2rem 2rem;
-    margin: 2rem 2rem 2rem 2rem;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
     background-color: var(--colorW);
+    box-shadow: 3px 3px 8px var(--colorG);
+}
+
+main article h2 a {
+    text-decoration: none;
+    color: var(--colorB);
+    font-size: larger;
+    line-height: 1em;
+}
+
+main article h2 a:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+main article p a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+/*there is no way to set the active in this per the instruction so the second nth-child was selected as active*/
+main article:nth-child(2) h2 a {
+    color: var(--color3);
+}
+
+main article p a:hover {
+    text-decoration: underline;
+}
+
+/*there is no way to set the active in this per the instruction so the second one was selected as active*/
+main article:nth-child(2) p a{
+    color: var(--color3);
+    text-decoration: underline;
+}
+
+.post-date {
+    color: var(--colorG);
 }
 
 @media only screen and (min-width: 500px){
     body div {
         flex-flow: row;
     }
-    
 }

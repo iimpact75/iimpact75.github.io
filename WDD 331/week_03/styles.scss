@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+//set variable colors, fonts, and media breaks
+$color1: #6495ED;
+$color2: #FAEBD7;
+$color3: #DEB887;
+$colorW: #ffffff;
+$colorG: #a3a3a3;
+$colorB: #000000;
+$font1: 'Lora', serif;
+$font2: 'Helvetica','Arial', sans-serif;
+$break-small: 500px;
+
+@mixin around_margin-padding ($marg:none, $padd:none) {
+    @if $marg == none {margin: none;}
+    @else {
+    margin: $marg $marg $marg $marg;}
+    @if $padd == none {padding: none;}
+    @else {
+    padding: $padd $padd $padd $padd;}
+}
+
+html {
+    font-family: $font2;
+    @include around_margin-padding;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: $font1;
+}
+
+body {
+    @include around_margin-padding;
+
+    div {
+        display: flex;
+        flex-flow: column;
+        min-width: 220px;
+    }
+}
+
+header {
+    background-color: $color1;
+    color: $color2;
+    text-align: right;
+    max-width: 100%;
+    min-width: 175px;
+    padding: 2rem;
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+        line-height: 2rem;
+
+        a {
+            &:hover {
+                color: $colorW;
+                text-decoration: underline;
+            }
+
+            &:active
+                {
+                color: $color3;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color2;
+    }
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 1rem 0;
+
+    img {
+
+        width: 96%;
+        min-width: 100px;
+        max-width: 300px;
+    }
+}
+
+main {
+    @include around_margin-padding(none,2rem);
+    background-color: $color2;
+
+    article {
+        @include around_margin-padding(5%,5%);
+        background-color: $colorW;
+        box-shadow: 3px 3px 8px $colorG;
+
+        h2 {
+            a {
+                text-decoration: none;
+                color: $colorB;
+                font-size: larger;
+                line-height: 1em;
+
+                &:hover {
+                    color: $color1;
+                    text-decoration: underline;
+                }
+            }
+            }
+
+        p {
+            a {
+                text-decoration: none;
+                color: $color1;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &:active {
+                    color: $color3;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.post-date {
+    color: $colorG;
+}
+
+@media only screen and (min-width: $break-small) {
+    body div {
+        flex-flow: row;
+    }
+}

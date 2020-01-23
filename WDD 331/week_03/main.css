@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+html {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: none;
+  padding: none;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Lora", serif;
+}
+
+body {
+  margin: none;
+  padding: none;
+}
+body div {
+  display: flex;
+  flex-flow: column;
+  min-width: 220px;
+}
+
+header {
+  background-color: #6495ED;
+  color: #FAEBD7;
+  text-align: right;
+  max-width: 100%;
+  min-width: 175px;
+  padding: 2rem;
+}
+header ul {
+  list-style: none;
+  text-decoration: none;
+  line-height: 2rem;
+}
+header ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+header ul a:active {
+  color: #DEB887;
+}
+header a {
+  text-decoration: none;
+  color: #FAEBD7;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 1rem 0;
+}
+figure img {
+  width: 96%;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+main {
+  margin: none;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: #FAEBD7;
+}
+main article {
+  margin: 5% 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 8px #a3a3a3;
+}
+main article h2 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: larger;
+  line-height: 1em;
+}
+main article h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+main article p a {
+  text-decoration: none;
+  color: #6495ED;
+}
+main article p a:hover {
+  text-decoration: underline;
+}
+main article p a:active {
+  color: #DEB887;
+  text-decoration: underline;
+}
+
+.post-date {
+  color: #a3a3a3;
+}
+
+@media only screen and (min-width: 500px) {
+  body div {
+    flex-flow: row;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

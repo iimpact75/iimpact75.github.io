@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Layouts for Card Suites - Steven Philips - WDD 331 Week 07</title>
+    <link href='card-styles.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- SVG shapes for pips -->
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-tear" viewBox="0 0 100 175">
+                <title>tear</title>
+                <path class="path1" d="M50,10 q-65,70 -55,120 c15,50 95,50 110,0 q15,-40 -45,-110 z"></path>
+            </symbol>
+
+        </defs>
+    </svg>
+
+    <!-- begin card -->
+    <div class="card card-front">
+        <div class="row">
+            <!-- this will be for the small pip in the top left corner with the number of the card -->
+            <div class="number cell col-1">7
+                <svg class="icon">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <!-- then 7 more pips for the body of the card -->
+            <div class="cell col-2">
+                <svg class="icon">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <div class="cell col-2 offset-2">
+                <svg class="icon">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+
+            <div class="cell col-8">
+                <svg class="icon">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <div class="cell col-2 offset-1">
+                <svg class="icon rotate">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <div class="cell col-2 offset-2">
+                <svg class="icon rotate">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <div class="cell col-2 offset-1">
+                <svg class="icon rotate">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <div class="cell col-2 offset-2">
+                <svg class="icon rotate">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+            <!-- Then the number and pip for the bottom right...upside down -->
+            <div class="rotate number cell col-1">7
+                <svg class="icon">
+                    <use xlink:href="#icon-tear"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

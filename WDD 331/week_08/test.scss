@@ -1,0 +1,49 @@
+//declare vairable colors
+$color-1: #3e3494; // skittle blue
+$color-2: #fcec5d; // Lemon drop yellow
+$color-3: #9ee575; // sour apple
+$color-4: #ee9dc4; // bubble gum pink
+$color-5: #382621; // chocolate river
+$color-b: #000000; // licorice
+$color-w: #ffffff; // peppermint
+$color-g: #5e5e5e; // sludge
+
+html {
+   padding: 1rem;
+   margin: auto;
+}
+
+div {
+   display: block;
+   background-color: black;
+   color: gold;
+   text-align: center;
+}
+
+div::before {
+   content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100' width='100'><circle cx='50' cy='50' r='40' stroke='green' stroke-width='5' fill='blue' /></svg>");
+}
+
+div::after {
+   content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100' width='100'><circle cx='50' cy='50' r='40' stroke='purple' stroke-width='20' fill='pink' /></svg>");
+}
+
+body {
+   height: 100vh;
+   background:
+      radial-gradient(circle at 50% 50%, $color-1 0%, rgba($color-1, $alpha: 0.82) 30%, rgba($color-2, .4) 50%, rgba($color-3, .4) 50%, rgba($color-3, $alpha: 0.04) 100%);
+   animation: ease-in 1s alternate moving_gradient; 
+
+   
+
+}
+
+@keyframes moving_gradient {
+   from {
+      background-position: 0px 0px;
+   }
+
+   to {
+      background-position: 1000px 700px;
+   }
+}

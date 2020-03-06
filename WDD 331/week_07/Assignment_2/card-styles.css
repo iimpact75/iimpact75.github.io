@@ -1,0 +1,153 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.card {
+  border: 1px solid grey;
+  height: 28vw;
+  width: 20vw;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px grey;
+  color: blue;
+}
+
+.cell {
+  text-align: center;
+}
+
+.card-front {
+  padding: 0.5em;
+}
+
+.icon {
+  width: 4vw;
+  height: 4vw;
+}
+
+.number {
+  text-align: center;
+  font-size: 2vw;
+}
+.number > .icon {
+  width: 2vw;
+  height: 2vw;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+symbol {
+  fill: blue;
+}
+
+@supports not (display: grid) {
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+  }
+
+  .cell {
+    flex: 1;
+  }
+
+  .col-1 {
+    flex: 0 0 12.5%;
+  }
+
+  .col-2 {
+    flex: 0 0 25%;
+  }
+
+  .col-3 {
+    flex: 0 0 37.5%;
+  }
+
+  .col-4 {
+    flex: 0 0 50%;
+  }
+
+  .col-5 {
+    flex: 0 0 62.5%;
+  }
+
+  .col-6 {
+    flex: 0 0 75%;
+  }
+
+  .col-7 {
+    flex: 0 0 87.5%;
+  }
+
+  .col-8 {
+    flex: 0 0 100%;
+  }
+
+  .offset-1 {
+    margin-left: 12.5%;
+  }
+
+  .offset-2 {
+    margin-left: 25%;
+  }
+
+  .offset-3 {
+    margin-left: 37.5%;
+  }
+
+  .offset-4 {
+    margin-left: 50%;
+  }
+
+  .offset-5 {
+    margin-left: 62.5%;
+  }
+
+  .offset-6 {
+    margin-left: 75%;
+  }
+
+  .offset-7 {
+    margin-left: 87.5%;
+  }
+
+  .offset-8 {
+    margin-left: 100%;
+  }
+}
+@supports (display: grid) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(4, 25%);
+    height: 100%;
+  }
+
+  .col-2 {
+    grid-column: auto/span 3;
+  }
+
+  .col-8 {
+    grid-column: auto/span 8;
+  }
+
+  .col-2.offset-1 {
+    grid-column: 2/span 3;
+  }
+
+  .rotate.number.cell {
+    grid-column: -2;
+    grid-row: -2;
+  }
+}
+
+/*# sourceMappingURL=card-styles.css.map */

@@ -1,0 +1,24 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat($num-column, $cell-width);
+    grid-template-rows: repeat($num-rows, $cell-height);
+    height: 100%;
+}
+
+.col-2 {
+    grid-column: auto/span 3;
+
+}
+
+.col-8 {
+    grid-column: auto/span 8;
+}
+
+.col-2.offset-1 {
+    grid-column: 2/span 3;
+}
+
+.rotate.number.cell {
+    grid-column: -2;
+    grid-row: -2;
+}

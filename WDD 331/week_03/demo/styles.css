@@ -6,11 +6,15 @@ body {
 #contactform {
   background-color: white;
 }
+
 #contactform input,
 #contactform textarea {
   background-color: white;
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
+
 @media (min-width: 20em) {
   #contactform {
     width: 90%;
@@ -19,6 +23,7 @@ body {
     margin-right: auto;
   }
 }
+
 @media (min-width: 60em) {
   #contactform {
     width: 70%;
@@ -30,12 +35,12 @@ body {
 
 fieldset > div {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
 }
 
 #content {
@@ -44,5 +49,4 @@ fieldset > div {
   margin-left: auto;
   margin-right: auto;
 }
-
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+:root {
+  --color1: #6495ED;
+  --color2: #FAEBD7;
+  --color3: #DEB887;
+  --colorW: #ffffff;
+  --colorB: #000000;
+  --font1: 'Lora', serif;
+  --font2: 'Helvetica', sans-serif;
+}
+
+html {
+  display: -ms-grid;
+  display: grid;
+  font-family: var(--font2);
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: var(--font1);
+}
+
+header {
+  float: left;
+  background-color: var(--color1);
+  max-width: 300px;
+  max-height: 100%;
+  padding: 2rem;
+}
+
+header nav ul li {
+  text-decoration: none;
+}
+
+main {
+  background-color: var(--color2);
+}
+
+main article {
+  margin: 4rem;
+  background-color: var(--colorW);
+}
+/*# sourceMappingURL=styles.css.map */

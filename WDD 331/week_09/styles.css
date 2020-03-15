@@ -1017,6 +1017,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #727272;
+}
+
 img {
   max-width: 100%;
 }
@@ -1030,5 +1034,27 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.site-banner {
+  display: block;
+  background-color: #056cb6;
+}
+
+.site-banner__left {
+  float: left;
+  background-color: #020202;
+}
+
+.site-banner__right {
+  float: right;
+}
+
+.icon-byui-logo {
+  color: #ffffff;
+}
+
+.text-white {
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */

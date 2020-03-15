@@ -29,6 +29,7 @@ input[type=checkbox]:checked~div.door__bottom {
     /*when the toggle state of the checkbox is changed it sets the door positions to run back to 0 start position*/
 }
 
+
 .hanger__doors {
 
     height: 100vh;
@@ -69,8 +70,15 @@ input[type=checkbox]:checked~div.door__bottom {
     /*keeps the extra pieces of the door hidden*/
     border-bottom: 2px solid black;
     /*I wanted a differentiating line of the seem of the doors*/
+    text-align: center;
 }
 
+h1, h2{ /*just having fun :D*/
+    position: relative;
+    top: 45%;
+    color: red;
+    text-shadow: black 2px 2px;
+}
 
 .space img {
     position: absolute;

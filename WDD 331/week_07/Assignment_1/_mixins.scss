@@ -1,0 +1,8 @@
+//created for column grids
+@mixin col($span-num) {
+    flex: 0 0 $cell-width * $span-num;
+}
+// created to offset columns as needed
+@mixin offset($offset-num) {
+    margin-left: $cell-width * $offset-num;
+}

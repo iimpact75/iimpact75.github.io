@@ -1,0 +1,83 @@
+
+
+csslint: There are 16 problems in C:\Users\Papa Steve\Documents\CIT230\iimpact75.github.io\WDD 331\week_03\main.css.
+
+main.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+main.css
+2: warning at line 4, col 3
+Expected (<margin-width>{1,4}) but found 'none'.
+  margin: none;
+
+main.css
+3: warning at line 5, col 3
+Expected (<padding-width>{1,4}) but found 'none'.
+  padding: none;
+
+main.css
+4: warning at line 15, col 3
+Expected (<margin-width>{1,4}) but found 'none'.
+  margin: none;
+
+main.css
+5: warning at line 16, col 3
+Expected (<padding-width>{1,4}) but found 'none'.
+  padding: none;
+
+main.css
+6: warning at line 24, col 1
+Rule doesn't have all its properties in alphabetical order.
+header {
+
+main.css
+7: warning at line 32, col 1
+Rule doesn't have all its properties in alphabetical order.
+header ul {
+
+main.css
+8: warning at line 44, col 1
+Rule doesn't have all its properties in alphabetical order.
+header a {
+
+main.css
+9: warning at line 54, col 1
+Rule doesn't have all its properties in alphabetical order.
+figure img {
+
+main.css
+10: warning at line 60, col 1
+Rule doesn't have all its properties in alphabetical order.
+main {
+
+main.css
+11: warning at line 61, col 3
+Expected (<margin-width>{1,4}) but found 'none'.
+  margin: none;
+
+main.css
+12: warning at line 65, col 1
+Rule doesn't have all its properties in alphabetical order.
+main article {
+
+main.css
+13: warning at line 71, col 14
+Heading (h2) should not be qualified.
+main article h2 a {
+
+main.css
+14: warning at line 71, col 1
+Rule doesn't have all its properties in alphabetical order.
+main article h2 a {
+
+main.css
+15: warning at line 77, col 14
+Heading (h2) should not be qualified.
+main article h2 a:hover {
+
+main.css
+16: warning at line 81, col 1
+Rule doesn't have all its properties in alphabetical order.
+main article p a {

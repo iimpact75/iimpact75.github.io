@@ -1,0 +1,8 @@
+$card-width: 40vw;
+$card-height: $card-width*1.4;
+$font-size-number: $card-width * 0.1;
+$icon-size: $card-width / 5;
+$num-column: 8;
+$cell-width: 100%/$num-column;
+$loop-start: 1;
+$loop-end: $num-column+1;

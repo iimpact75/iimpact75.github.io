@@ -21,6 +21,7 @@ input[type=checkbox] {
     /*makes sure the checkbox runs the full width of the screen*/
     z-index: 100;
     /*ensures the checkbox is always on top*/
+    
 }
 
 input[type=checkbox]:checked~div.door__top,

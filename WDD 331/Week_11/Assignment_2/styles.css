@@ -1,0 +1,95 @@
+body {
+  background-color: #a7adff;
+  color: #ffffff;
+}
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  display: inline-block;
+}
+
+.hamburger:hover .ham1, .hamburger:hover .ham2, .hamburger:hover .ham3 {
+  background-color: #000000;
+}
+
+.ham1 {
+  width: 35px;
+  height: 5px;
+  background-color: #707070;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ham2 {
+  width: 35px;
+  height: 5px;
+  background-color: #707070;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ham3 {
+  width: 35px;
+  height: 5px;
+  background-color: #707070;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.open .ham1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.open .ham2 {
+  opacity: 0;
+}
+
+.open .ham3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.slider {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: -50px;
+  left: -50px;
+  background-color: rgba(167, 173, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow-x: hidden;
+  list-style: none;
+  -webkit-transition: .05s;
+  transition: .05s;
+  padding-top: 10%;
+}
+
+.slider a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #707070;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slider a:hover {
+  color: #000000;
+}
+
+.open .slider {
+  width: 150px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=styles.css.map */

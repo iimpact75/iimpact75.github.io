@@ -1,0 +1,89 @@
+$color-b: #000000; // black
+$color-w: #ffffff; // white
+$color-g: #707070; // gray
+$color-p: #a7adff; // primary
+
+
+body{
+    background-color: $color-p;
+    color: $color-w;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+.hamburger:hover {
+    display: inline-block;
+    .ham1,.ham2,.ham3 {
+        background-color: $color-b;
+    }
+}
+.ham1 {
+    width: 35px;
+    height: 5px;
+    background-color: $color-g;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.ham2 {
+    width: 35px;
+    height: 5px;
+    background-color: $color-g;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.ham3{
+    width: 35px;
+    height: 5px;
+    background-color: $color-g;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .ham1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .open .ham2 {opacity: 0;}
+  
+  .open .ham3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.slider {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: -50px;
+    left: -50px;
+    background-color: rgba($color-p, $alpha: 0.8);
+    border: 1px solid rgba($color-w, $alpha: 0.5);
+    overflow-x: hidden;
+    list-style: none;
+    transition: .05s;
+    padding-top: 10%;
+}
+.slider a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $color-g;
+    display: block;
+    transition: 0.3s;
+    &:hover{
+        color: $color-b;
+    }
+}
+
+.open .slider { 
+    width: 150px;
+    transition: .5s;
+}

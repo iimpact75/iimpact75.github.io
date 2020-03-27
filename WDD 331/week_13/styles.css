@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Ultra&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+body {
+  background-size: cover;
+  background-color: #9ee575;
+  color: #3e3494;
+  margin: 0 .5em 0 .5em;
+  background-image: url("back-01500.jpg");
+  background-repeat: repeat-y;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+div {
+  margin-top: 10px;
+}
+
+footer {
+  margin: 10px auto;
+}
+
+#zen-summary {
+  margin-bottom: 2em;
+}
+
+.page-wrapper {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: auto 20%;
+      grid-template-columns: auto 20%;
+      grid-template-areas: "header  sidebar" "header  sidebar" "content sidebar" "content footer" "content .";
+}
+
+.intro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.main {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: sidebar;
+}
+
+#zen-preamble {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  -ms-grid-columns: 5em auto;
+      grid-template-columns: 5em auto;
+      grid-template-areas: "icon title" "para para";
+}
+
+#zen-preamble h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+#zen-preamble p {
+  grid-column: 1/-1;
+}
+
+#zen-explanation {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  -ms-grid-columns: 5em auto;
+      grid-template-columns: 5em auto;
+      grid-template-areas: "icon title" "para para";
+}
+
+#zen-explanation h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+#zen-explanation p {
+  grid-column: 1/-1;
+}
+
+#zen-participation {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  -ms-grid-columns: 5em auto;
+      grid-template-columns: 5em auto;
+      grid-template-areas: "icon title" "para para";
+}
+
+#zen-participation h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+#zen-participation p {
+  grid-column: 1/-1;
+}
+
+#zen-benefits {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  -ms-grid-columns: 5em auto;
+      grid-template-columns: 5em auto;
+      grid-template-areas: "icon title" "para para";
+}
+
+#zen-benefits h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+#zen-benefits p {
+  grid-column: 1/-1;
+}
+
+#zen-requirements {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  -ms-grid-columns: 5em auto;
+      grid-template-columns: 5em auto;
+      grid-template-areas: "icon title" "para para";
+}
+
+#zen-requirements h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+#zen-requirements p {
+  grid-column: 1/-1;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fcec5d), to(#9ee575));
+  background-image: linear-gradient(to right, #fcec5d, #9ee575);
+  background-size: 300% 300%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+  color: #3e3494;
+  padding: 1em;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  font-size: 2em;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.intro h1 {
+  font-family: 'Ultra';
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.intro h2 {
+  font-family: 'Open Sans';
+  font-size: 1em;
+}
+
+.summary {
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+}
+
+.preamble h3,
+.main h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  font-family: 'Ultra';
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.preamble p,
+.main p,
+.participation p,
+.benefits p,
+.requirements p {
+  font-family: 'Open Sans';
+  font-size: .8em;
+}
+
+.sidebar h3 {
+  font-family: 'Ultra';
+  font-size: 1em;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 1em;
+  line-height: normal;
+}
+
+.sidebar ul li a .designer-name {
+  font-size: .5em;
+}
+
+@media (max-width: 700px) {
+  .page-wrapper {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+}
+
+.sidebar {
+  margin: 0 auto;
+  background-color: #3e3494;
+  border: 5px solid #9ee575;
+  color: #fcec5d;
+  padding: .5em;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+}
+
+.sidebar ul li a {
+  color: #fcec5d;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  margin-top: 1em;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.preamble p, .explanation p, .participation p, .benefits p, .requirements p {
+  font-size: 1em;
+}
+
+.preamble:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
+  background-color: #fcec5d;
+  border: solid 0.5em #3e3494;
+  border-radius: 8px;
+  padding: 1em;
+  -webkit-transform: translate(10%, -10%);
+          transform: translate(10%, -10%);
+}
+
+.preamble:hover h3, .explanation:hover h3, .participation:hover h3, .benefits:hover h3, .requirements:hover h3 {
+  font-size: 3em;
+}
+
+.preamble:hover p, .explanation:hover p, .participation:hover p, .benefits:hover p, .requirements:hover p {
+  font-size: 2em;
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,128 @@
+header {
+    margin-bottom: 1em;
+}
+
+body {
+    background-size: cover;
+    background-color: $color-3;
+    color: $color-1;
+    margin: 0 .5em 0 .5em;
+    background-image: url("back-01500.jpg");
+    background-repeat: repeat-y;
+}
+
+p+p {
+    margin-top: 10px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+footer {
+    margin: 10px auto;
+}
+
+
+#zen-summary {
+    margin-bottom: 2em;
+}
+
+.page-wrapper {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto 20%;
+    grid-template-areas: "header  sidebar""header  sidebar""content sidebar""content footer""content .";
+}
+
+.intro {
+    grid-area: header;
+}
+
+.main {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+#zen-preamble {
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 5em auto;
+    grid-template-areas: "icon title""para para"
+}
+
+#zen-preamble h3 {
+    grid-area: title;
+}
+
+#zen-preamble p {
+    grid-column: 1/-1;
+}
+
+#zen-explanation {
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 5em auto;
+    grid-template-areas: "icon title""para para"
+}
+
+#zen-explanation h3 {
+    grid-area: title;
+}
+
+#zen-explanation p {
+    grid-column: 1/-1;
+}
+
+#zen-participation {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 5em auto;
+    grid-template-areas: "icon title""para para"
+}
+
+#zen-participation h3 {
+    grid-area: title;
+}
+
+#zen-participation p {
+    grid-column: 1/-1;
+}
+
+#zen-benefits {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 5em auto;
+    grid-template-areas: "icon title""para para"
+}
+
+#zen-benefits h3 {
+    grid-area: title;
+}
+
+#zen-benefits p {
+    grid-column: 1/-1;
+}
+
+#zen-requirements {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 5em auto;
+    grid-template-areas: "icon title""para para"
+}
+
+#zen-requirements h3 {
+    grid-area: title;
+}
+
+#zen-requirements p {
+    grid-column: 1/-1;
+}

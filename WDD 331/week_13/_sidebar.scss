@@ -1,0 +1,17 @@
+.sidebar {
+    margin: 0 auto;
+    background-color: $color-1;
+    border: 5px solid $color-3;
+    color: $color-2;
+    padding: .5em;
+
+    ul {
+        li {
+            a {
+                color: $color-2;
+            }
+
+            list-style-type: none;
+        }
+    }
+}

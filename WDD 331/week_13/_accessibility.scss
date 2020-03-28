@@ -1,0 +1,9 @@
+@media (prefers-reduced-motion: reduce){
+   #zen-explanation h3::before,
+    #zen-requirements h3::before,
+    #zen-preamble h3::before,
+    #zen-participation h3::before,
+    #zen-benefits h3::before {
+        animation: none;
+    }
+}

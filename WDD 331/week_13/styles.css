@@ -219,9 +219,12 @@ html {
 
 .sidebar {
   background-color: #3e3494;
-  border: solid 5px #9ee575;
+  border: solid 0.5em #9ee575;
+  border-radius: 8px;
   color: #fcec5d;
   padding: .8em;
+  max-height: 650px;
+  min-width: 156px;
 }
 
 .sidebar h3 {
@@ -563,6 +566,17 @@ header h2 {
   100% {
     -webkit-transform: scale(1, 1) translateY(0px);
             transform: scale(1, 1) translateY(0px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #zen-explanation h3::before,
+  #zen-requirements h3::before,
+  #zen-preamble h3::before,
+  #zen-participation h3::before,
+  #zen-benefits h3::before {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,35 +1,4 @@
-@mixin chunk{
-    margin-top:1em;
-      h3{
-      font-size:2em;
-      font-weight:bold;
-        margin-bottom:.8em;
-    }
-    p{
-      font-size:1em;
-    }
-    &:hover{
-      background-color: $color-2;
-      border: solid .5em $color-1;
-      border-radius:8px;
-      padding:1em;
-      transform: translate(10%,-10%);
-
-      h3{
-        font-size:3em;
-      }
-      
-      p{
-        font-size:2em;
-        display:block;
-      }
-    }
-  }
-  
-
-
   .preamble, .explanation, .participation, .benefits, .requirements{
     @include chunk;
-  
   }
 

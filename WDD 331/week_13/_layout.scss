@@ -3,12 +3,9 @@ header {
 }
 
 body {
-    background-size: cover;
-    background-color: $color-3;
-    color: $color-1;
+
     margin: 0 .5em 0 .5em;
-    background-image: url("back-01500.jpg");
-    background-repeat: repeat-y;
+    padding:1em;
 }
 
 p+p {
@@ -22,7 +19,6 @@ div {
 footer {
     margin: 10px auto;
 }
-
 
 #zen-summary {
     margin-bottom: 2em;

@@ -1,17 +1,46 @@
 .sidebar {
-    margin: 0 auto;
     background-color: $color-1;
-    border: 5px solid $color-3;
+    border: solid .5em $color-3;
+    border-radius: 8px;
     color: $color-2;
-    padding: .5em;
+    padding: .8em;
+    max-height: 650px;
+    min-width: 156px;
+    h3 {
+        font-family: 'Ultra';
+        font-size: 1em;
+    }
 
     ul {
         li {
+            .design-name{
+                &:hover{
+                    font-style: italic;
+                }
+               }
+        
             a {
+                text-decoration: none;
+                font-family: 'Open Sans';
+                font-size: 1em;
+                line-height:1.4 ;
                 color: $color-2;
-            }
+                &:hover{
+                    color:$color-w;
+                }
+               
+                
+            
 
-            list-style-type: none;
+}
+            
         }
+    }
+    .archives, .resources{
+        margin-top: 1.5em;
+        &:hover{
+            color:$color-w;
+        }
+       
     }
 }

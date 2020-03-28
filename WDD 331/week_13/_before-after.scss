@@ -1,0 +1,79 @@
+#zen-requirements h3::before,
+#zen-preamble h3::before {
+        float: left;
+        content: ' ';
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 131 133'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23ee9dc4;stroke:%23f889bf;stroke-miterlimit:10;stroke-width:4px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Ejelly-bean%3C/title%3E%3Cg id='Jelly_Bean' data-name='Jelly Bean'%3E%3Cpath class='cls-1' d='M134.7,47.3c0,16.75-10.11,28.16-25.73,36.16-14.52,4.72-25,12.68-29.81,29.81C63.35,156.33-7.29,143.82,8,85.17,21.76,35.17,127-36.75,134.7,47.3Z' transform='translate(-4.85 -7.65)'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 40px 40px;
+        height: 40px;
+        width: 40px;
+        animation: hello 1.5s ease-in-out infinite;
+        margin-right: 0.5em;
+}
+
+ @keyframes hello {
+     0% {transform:rotateZ(-90deg);}
+     50% {transform:rotateZ(-180deg);}
+     100%{transform:rotateZ(-90deg);}
+ }
+
+ #zen-explanation h3::before{
+         content: '';
+         float: left;
+         background-image: url('images/peppermint.svg');
+         background-size: 40px 40px;
+         height: 40px;
+         width: 40px;
+         animation: spin 4s ease infinite;
+         margin-right: 0.5em;
+         
+ }
+
+ @keyframes spin {
+         from {transform: rotateZ(0deg);}
+         to{transform: rotateZ(359deg);}
+ }
+
+
+ #zen-participation h3::before{
+        content: '';
+        float: left;
+        background-image: url('images/lemon.svg');
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+        animation: snap 3.5s ease infinite;
+        margin-right: 0.5em;
+        
+}
+
+@keyframes snap {
+        0% {transform: scale(1,1);}
+        20% {transform: scale(1.5, 0.8);}
+        25% {transform: scale(.9,1.5);}
+        30% {transform: scale(1.3,.95);}
+        40% {transform: scale(1.1,1);}
+        100% {transform: scale(1,1);}
+}
+
+#zen-benefits h3::before{
+        content: '';
+        float: left;
+        background-image: url('images/kiss.svg');
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+        animation: bounce 4.5s ease infinite;
+        margin-right: 0.5em;
+        
+}
+
+@keyframes bounce {
+        0% {transform: scale(1,1) translateY(0);}
+        20% {transform: scale(1.15, 0.8) translateY(10px);}
+        25% {transform: scale(.9,1.1) translateY(-40px);}
+        30% {transform: scale(1,1) translateY(0);}
+        40% {transform: scale(1.25,.85) translateY(0);}
+        50% {transform: scale(.9,1.1) translateY(-8px);}
+        60% {transform: scale(1.1,.9) translateY(0px);}
+        100% {transform: scale(1,1) translateY(0px);}
+}

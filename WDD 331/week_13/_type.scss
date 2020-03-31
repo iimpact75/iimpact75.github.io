@@ -47,3 +47,17 @@ header {
     }
 }
 
+footer {
+    font-family: 'Ultra';
+    letter-spacing: 2px;
+    font-size: 1.1em;
+
+    a {
+        text-decoration: none;
+        color: $color-1;
+
+        &:hover {
+            color: $color-4;
+        }
+    }
+}

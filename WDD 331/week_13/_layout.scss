@@ -5,7 +5,7 @@ header {
 body {
 
     margin: 0 .5em 0 .5em;
-    padding:1em;
+    padding: 1em;
 }
 
 p+p {
@@ -45,80 +45,16 @@ footer {
     grid-area: sidebar;
 }
 
-#zen-preamble {
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: 5em auto;
-    grid-template-areas: "icon title""para para"
-}
-
-#zen-preamble h3 {
-    grid-area: title;
-}
-
-#zen-preamble p {
-    grid-column: 1/-1;
-}
-
-#zen-explanation {
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: 5em auto;
-    grid-template-areas: "icon title""para para"
-}
-
-#zen-explanation h3 {
-    grid-area: title;
-}
-
-#zen-explanation p {
-    grid-column: 1/-1;
-}
-
-#zen-participation {
-    margin-top: 1em;
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: 5em auto;
-    grid-template-areas: "icon title""para para"
-}
-
-#zen-participation h3 {
-    grid-area: title;
-}
-
-#zen-participation p {
-    grid-column: 1/-1;
-}
-
-#zen-benefits {
-    margin-top: 1em;
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: 5em auto;
-    grid-template-areas: "icon title""para para"
-}
-
-#zen-benefits h3 {
-    grid-area: title;
-}
-
-#zen-benefits p {
-    grid-column: 1/-1;
-}
-
+#zen-preamble,
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
 #zen-requirements {
-    margin-top: 1em;
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: 5em auto;
-    grid-template-areas: "icon title""para para"
+    @include parLayout;
 }
 
-#zen-requirements h3 {
-    grid-area: title;
-}
-
-#zen-requirements p {
-    grid-column: 1/-1;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

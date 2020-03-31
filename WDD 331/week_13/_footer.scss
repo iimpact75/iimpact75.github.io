@@ -1,0 +1,23 @@
+footer {
+    margin: 2rem 0;
+    align-items: stretch;
+    justify-items: stretch;
+
+    a {
+        padding: 3.5rem;
+        background-image: url('images/lemon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        place-self: center;
+    }
+
+    a:nth-child(3) {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    a:first-child {
+        margin-right: -1rem;
+    }
+
+}

@@ -1,8 +1,4 @@
-html{
-
-    background: radial-gradient(circle at 90% 30%, rgba($color-4, 0.4) 0%, rgba($color-4, $alpha: 0.4) 30%, rgba($color-4, $alpha: .4) 30%, rgba($color-3, $alpha: 0.4) 100%)
-      , radial-gradient(circle at 95% 60%, $color-4 0%, rgba($color-4, $alpha: 0.82) 30%, rgba($color-2, .4) 50%, rgba($color-3, .4) 50%, rgba($color-3, $alpha: 0.04) 100%)
-      , radial-gradient(circle at 70% 11%, rgba($color-3, $alpha: 0.4) 0%, rgba($color-2, $alpha: 0.4) 50%, rgba($color-3, .4) 50%, rgba($color-3, $alpha: 0.04) 100%)
-      , radial-gradient(circle at 15% 65%, rgba($color-2, 0.8) 0%, rgba($color-2, $alpha: 0.6) 50%, rgba($color-3, $alpha: .6) 50%, rgba($color-3, $alpha: 0.4) 100%);
-    background-size: cover;
+html {
+  background: radial-gradient(circle at 90% 30%, rgba($color-4, 0.4) 0%, rgba($color-4, $alpha: 0.4) 30%, rgba($color-4, $alpha: .4) 30%, rgba($color-3, $alpha: 0.4) 100%), radial-gradient(circle at 95% 60%, $color-4 0%, rgba($color-4, $alpha: 0.82) 30%, rgba($color-2, .4) 50%, rgba($color-3, .4) 50%, rgba($color-3, $alpha: 0.04) 100%), radial-gradient(circle at 70% 11%, rgba($color-3, $alpha: 0.4) 0%, rgba($color-2, $alpha: 0.4) 50%, rgba($color-3, .4) 50%, rgba($color-3, $alpha: 0.04) 100%), radial-gradient(circle at 15% 65%, rgba($color-2, 0.8) 0%, rgba($color-2, $alpha: 0.6) 50%, rgba($color-3, $alpha: .6) 50%, rgba($color-3, $alpha: 0.4) 100%);
+  background-size: cover;
 }

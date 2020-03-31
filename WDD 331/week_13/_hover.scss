@@ -1,4 +1,7 @@
-  .preamble, .explanation, .participation, .benefits, .requirements{
+  .preamble,
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements {
     @include chunk;
   }
-

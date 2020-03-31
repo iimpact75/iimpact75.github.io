@@ -16,7 +16,7 @@
      100%{transform:rotateZ(-90deg);}
  }
 
- #zen-explanation h3::before{
+ #zen-explanation h3::before {
          content: '';
          float: left;
          background-image: url('images/peppermint.svg');
@@ -25,7 +25,7 @@
          width: 40px;
          animation: spin 4s ease infinite;
          margin-right: 0.5em;
-         
+
  }
 
  @keyframes spin {

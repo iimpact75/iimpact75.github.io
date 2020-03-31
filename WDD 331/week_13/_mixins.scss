@@ -19,6 +19,7 @@
     transform: translate(10%, -10%);
     transition-duration: 3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
 
     h3 {
       font-size: 2em;
@@ -28,5 +29,20 @@
       font-size: 1.2em;
       display: block;
     }
+  }
+}
+
+@mixin parLayout {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: auto;
+  grid-template-areas: "title""para"
+
+  h3 {
+    grid-area: title;
+  }
+
+  p {
+    grid-column: 1/-1;
   }
 }
